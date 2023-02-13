@@ -13,3 +13,17 @@ Profs: Aparecido Freitas (prof. responsável | Teoria), Marco Aurélio (Labs), R
 <img src="https://github.com/Rogerio-mack/IMT_Banco_de_Dados/raw/main/Figuras/DBMS_components.png" width=500, align="center">
 
 ### Market share acesse [aqui](https://db-engines.com/en/ranking/relational+dbms) 
+
+### [Quick-'Quick' Reference](https://www.w3schools.com/sql/default.asp)
+
+### [MySQL Tutorial](https://dev.mysql.com/doc/mysql-tutorial-excerpt/8.0/en/tutorial.html)
+
+### Tables
+<img src="https://github.com/Rogerio-mack/IMT_Banco_de_Dados/raw/main/Figuras/ER_tables.png" width=900, align="center">
+
+from [here](https://launchschool.com/books/sql/read/table_relationships)
+
+### Diagrams 
+<img src="https://github.com/Rogerio-mack/IMT_Banco_de_Dados/raw/main/Figuras/ER_diagrams.png" width=400, align="center">
+
+from [here](https://launchschool.com/books/sql/read/table_relationships)
