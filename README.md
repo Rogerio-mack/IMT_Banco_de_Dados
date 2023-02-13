@@ -27,3 +27,12 @@ from [here](https://launchschool.com/books/sql/read/table_relationships)
 <img src="https://github.com/Rogerio-mack/IMT_Banco_de_Dados/raw/main/Figuras/ER_diagrams.png" width=400, align="center">
 
 from [here](https://launchschool.com/books/sql/read/table_relationships)
+
+### Leia mais
+
+[What is a relational database](https://cloud.google.com/learn/what-is-a-relational-database?hl=pt-br) from Google.
+
+[Relational datasbase](https://www.ibm.com/topics/relational-databases) from IBM. Codd, Date.
+
+[The Entity-Relationship Model-Toward a Unified View of Data](https://www.csc.lsu.edu/~chen/pdf/erd-5-pages.pdf) Peter, CHEN (1976). Citado por 13135
+
