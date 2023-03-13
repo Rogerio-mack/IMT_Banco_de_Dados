@@ -23,3 +23,11 @@ notes: [MySQL Installer for Windows](https://dev.mysql.com/downloads/installer/)
 Lab3 MySQL Command line and workbench
 
 notes: [Executing SQL Statements from a Text File](https://dev.mysql.com/doc/refman/8.0/en/mysql-batch-commands.html)
+
+Lab3 Create Table
+
+notes: acesse os arquivos 
+
+[exemplo1.sql](https://github.com/Rogerio-mack/IMT_Banco_de_Dados/blob/main/exemplo1.sql) [download](https://github.com/Rogerio-mack/IMT_Banco_de_Dados/raw/main/exemplo1.sql) 
+
+[exemplo2.sql](https://github.com/Rogerio-mack/IMT_Banco_de_Dados/blob/main/exemplo2.sql) [download](https://github.com/Rogerio-mack/IMT_Banco_de_Dados/raw/main/exemplo2.sql)
