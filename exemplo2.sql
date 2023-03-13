@@ -32,3 +32,25 @@ VALUES ('2', 'Joyce', 'James', 60);
 -- Select Table
 --
 SELECT * FROM Persons;
+
+--
+-- Alter Table
+--
+ALTER TABLE Persons
+ADD Origen char(10);
+
+--
+-- Select Table
+--
+SELECT * FROM Persons;
+
+--
+-- Drop Table
+--
+DROP TABLE Persons;
+
+--
+-- Show Tables
+--
+SHOW TABLES;
+
