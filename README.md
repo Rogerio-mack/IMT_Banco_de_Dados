@@ -32,4 +32,8 @@ notes: acesse os arquivos
 
 [exemplo2.sql](https://github.com/Rogerio-mack/IMT_Banco_de_Dados/blob/main/exemplo2.sql) [download](https://github.com/Rogerio-mack/IMT_Banco_de_Dados/raw/main/exemplo2.sql)
 
+Lab3 [Solução](https://github.com/Rogerio-mack/IMT_Banco_de_Dados/blob/main/Banco_de_Dados_Labs_solucao/T3_solucao.sql)
+
 Lab7 [MySQL Foreign Keys](https://github.com/Rogerio-mack/IMT_Banco_de_Dados/blob/main/MySQL_Foreign_Keys.md)
+
+Lab7 [Solução](https://github.com/Rogerio-mack/IMT_Banco_de_Dados/blob/main/Banco_de_Dados_Labs_solucao/T7_solucao.sql)
