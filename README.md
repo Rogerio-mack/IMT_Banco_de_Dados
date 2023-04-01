@@ -24,7 +24,7 @@ Lab3 MySQL Command line and workbench
 
 notes: [Executing SQL Statements from a Text File](https://dev.mysql.com/doc/refman/8.0/en/mysql-batch-commands.html)
 
-Lab3 Create Table
+Lab3 **Create Table**
 
 notes: acesse os arquivos 
 
@@ -34,6 +34,8 @@ notes: acesse os arquivos
 
 Lab3 [Solução](https://github.com/Rogerio-mack/IMT_Banco_de_Dados/blob/main/Banco_de_Dados_Labs_solucao/T3_solucao.sql)
 
-Lab7 [MySQL Foreign Keys](https://github.com/Rogerio-mack/IMT_Banco_de_Dados/blob/main/MySQL_Foreign_Keys.md)
+Lab7 **Create Table with Foreign Keys**
+
+notes: [MySQL Foreign Keys](https://github.com/Rogerio-mack/IMT_Banco_de_Dados/blob/main/MySQL_Foreign_Keys.md)
 
 Lab7 [Solução](https://github.com/Rogerio-mack/IMT_Banco_de_Dados/blob/main/Banco_de_Dados_Labs_solucao/T7_solucao.sql)
