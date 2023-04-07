@@ -39,3 +39,7 @@ Lab7 **Create Table with Foreign Keys**
 notes: [MySQL Foreign Keys](https://github.com/Rogerio-mack/IMT_Banco_de_Dados/blob/main/MySQL_Foreign_Keys.md)
 
 Lab7 [Solução](https://github.com/Rogerio-mack/IMT_Banco_de_Dados/blob/main/Banco_de_Dados_Labs_solucao/T7_solucao.sql)
+
+Lab9 [Solução](https://github.com/Rogerio-mack/IMT_Banco_de_Dados/blob/main/Banco_de_Dados_Labs_solucao/T9_solucao.sql)
+
+[Notas e Feedback das Atividades](https://github.com/Rogerio-mack/IMT_Banco_de_Dados/raw/main/Lista_Banco_de_Dados.xlsx) *Faça Download*
