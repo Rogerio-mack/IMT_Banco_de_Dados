@@ -42,4 +42,12 @@ Lab7 [Solução](https://github.com/Rogerio-mack/IMT_Banco_de_Dados/blob/main/Ba
 
 Lab9 [Solução](https://github.com/Rogerio-mack/IMT_Banco_de_Dados/blob/main/Banco_de_Dados_Labs_solucao/T9_solucao.sql)
 
+**DICAS DE ESTUDO PARA PROVA**
+> 50% da prova é prática, envolvendo a codificação SQL para criação de esquemas de bancos de dados (DDL)
+> Saiba escrever o **código completo** de criação de um banco de dados semelhantes ao esquema de banco de dados do Lab9. 3 Tabelas, com relacionamentos e ao menos um deles envolvendo 
+um relacionamento M-N (isto é, uma tabela associativa)
+> Saiba popular essas tabelas (inserir registros)
+> Saiba fazer uma seleção (SELECT) como por exemplo no Lab9, de todos os códigos de projeto para um dado código de funcionário em que ele desempenhe a função de 'gerente'
+
+
 [Notas e Feedback das Atividades](https://github.com/Rogerio-mack/IMT_Banco_de_Dados/raw/main/Lista_Banco_de_Dados.xlsx) *Faça Download*
