@@ -44,7 +44,9 @@ Lab9 [Solução](https://github.com/Rogerio-mack/IMT_Banco_de_Dados/blob/main/Ba
 
 Lab11
 
-> Pergunta extra para o Lab11: Listar o nome dos 3 vendedores com maiores vendas em ordem decrescente de vendas.
+> Perguntas extra para o Lab11
+* >> Listar o nome dos 3 vendedores com maiores vendas em ordem decrescente de vendas.
+* >> O nome do vendedor e o percentual atingido da meta do em ordem do maior para o menor percentual.
 
 **DICAS DE ESTUDO PARA PROVA**
 
