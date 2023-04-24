@@ -46,7 +46,7 @@ Lab11
 
 > Perguntas extra para o Lab11
 * >> Listar o nome dos 3 vendedores com maiores vendas em ordem decrescente de vendas.
-* >> O nome do vendedor e o percentual atingido da meta do em ordem do maior para o menor percentual.
+* >> O nome do vendedor e o percentual atingido da meta do em ordem do maior para o menor percentual (*dica: nomeia a sua coluna de percentual*).
 
 **DICAS DE ESTUDO PARA PROVA**
 
