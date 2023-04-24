@@ -42,6 +42,10 @@ Lab7 [Solução](https://github.com/Rogerio-mack/IMT_Banco_de_Dados/blob/main/Ba
 
 Lab9 [Solução](https://github.com/Rogerio-mack/IMT_Banco_de_Dados/blob/main/Banco_de_Dados_Labs_solucao/T9_solucao.sql)
 
+Lab11
+
+> Pergunta extra para o Lab11: Listar o nome dos 3 vendedores com maiores vendas em ordem decrescente de vendas.
+
 **DICAS DE ESTUDO PARA PROVA**
 
 50% da prova é prática, envolvendo a codificação SQL para criação de esquemas de bancos de dados (DDL). Dicas do que você deve saber para prova:
