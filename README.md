@@ -42,7 +42,7 @@ Lab7 [Solução](https://github.com/Rogerio-mack/IMT_Banco_de_Dados/blob/main/Ba
 
 Lab9 [Solução](https://github.com/Rogerio-mack/IMT_Banco_de_Dados/blob/main/Banco_de_Dados_Labs_solucao/T9_solucao.sql)
 
-Lab11
+Lab11 - Lab15 *Soluções na Pasta Acima*
 
 > Perguntas extra para o Lab11
 * >> Listar o nome dos 3 vendedores com maiores vendas em ordem decrescente de vendas.
@@ -56,5 +56,11 @@ Lab11
 * Saiba popular essas tabelas (INSERT de registros)
 * Saiba fazer uma seleção (SELECT) como por exemplo no Lab9, de todos os códigos de projeto para um dado código de funcionário em que ele desempenhe a função de 'gerente'
 
+**DICAS DE ESTUDO PARA PROVA 2**
 
-[Notas e Feedback das Atividades](https://github.com/Rogerio-mack/IMT_Banco_de_Dados/raw/main/Lista_Banco_de_Dados.xlsx) *Faça Download*
+Novamente 50% da prova é prática, as demais envolvem questões do modelo relacional, álgebra relacional e modelagem ER. 
+
+* Importante na parte prática entender claramente modelos ER para construir as consultas. Não deve haver scripts de DDL, sendo o foco maior em DML. 
+* Quase todas, senão todas, consultas devem envolver joins de duas ou mais tabelas. As consultas são formuladas em termos de um problema a ser resolvido e os dados apresentados em forma de um diagrama ER.
+* Da parte prática você pode esperar 3-5 questões de joins, 0-1 questão de groupby, 0-1 subselect. Dê foco aos joins!
+* Não esqueça de empregar o ORDER BY onde necessário. 
