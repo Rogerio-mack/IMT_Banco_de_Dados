@@ -64,3 +64,5 @@ Novamente 50% da prova é prática, as demais envolvem questões do modelo relac
 * Quase todas, senão todas, consultas devem envolver joins de duas ou mais tabelas. As consultas são formuladas em termos de um problema a ser resolvido e os dados apresentados em forma de um diagrama ER.
 * Da parte prática você pode esperar 3-5 questões de joins, 0-1 questão de groupby, 0-1 subselect. Dê foco aos joins!
 * Não esqueça de empregar o ORDER BY onde necessário. 
+
+[Notas e Comentários das Atividades de Lab](https://github.com/Rogerio-mack/IMT_Banco_de_Dados/raw/main/Lista_Banco_de_Dados.xlsx)
