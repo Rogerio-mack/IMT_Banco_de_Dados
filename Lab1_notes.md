@@ -23,7 +23,7 @@ from [here](https://launchschool.com/books/sql/read/table_relationships)
 
 [What is a relational database](https://cloud.google.com/learn/what-is-a-relational-database?hl=pt-br) from Google.
 
-[Relational datasbase](https://www.ibm.com/topics/relational-databases) from IBM. Codd, Date.
+[Relational database](https://www.ibm.com/topics/relational-databases) from IBM. Codd, Date.
 
 [The Entity-Relationship Model-Toward a Unified View of Data](https://www.csc.lsu.edu/~chen/pdf/erd-5-pages.pdf) Peter, CHEN (1976). Citado por 13135
 
