@@ -6,3 +6,5 @@
 [Q1](https://github.com/Rogerio-mack/IMT_Banco_de_Dados/raw/main/Q1.md)
 
 [Q2](https://github.com/Rogerio-mack/IMT_Banco_de_Dados/raw/main/Q2.md)
+
+[Q3](https://github.com/Rogerio-mack/IMT_Banco_de_Dados/raw/main/Q3.md)
