@@ -10,3 +10,7 @@
 [Q3](https://github.com/Rogerio-mack/IMT_Banco_de_Dados/blob/main/Q3.md)
 
 [Q4](https://github.com/Rogerio-mack/IMT_Banco_de_Dados/blob/main/Q4.md)
+
+[Q5](https://github.com/Rogerio-mack/IMT_Banco_de_Dados/blob/main/Q5.md)
+
+[Q6](https://github.com/Rogerio-mack/IMT_Banco_de_Dados/blob/main/Q6.md)
