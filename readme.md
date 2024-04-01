@@ -1,4 +1,4 @@
-<img src="https://maua.br/images/selo-60-anos-maua.svg" width=300, align="right">
+<img src="https://github.com/Rogerio-mack/IMT_CD_2024/blob/main/maua_logo.png?raw=true" width=300, align="right">
 <br>
 
 # Banco de Dados
