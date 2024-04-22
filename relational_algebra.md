@@ -22,6 +22,14 @@ Isso ok,
 $$ \sigma_{idade > 10}( \Pi_{\text{nome, sexo, idade}}(Alunos) ) $$
 
 ```
+Isso nok 
+```
+
+$$ \Pi_{\text{nome, sexo}}(\sigma_{idade > 10}(Alunos) ) $$
+
+
+
+```
 Mas isso nok 
 ```
 
