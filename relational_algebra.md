@@ -13,3 +13,21 @@ $$ \Pi_{\text{nome, idade, sexo}}( \sigma_{idade > 10}(Alunos) ) $$
 ```
 select nome, idade, sexo from alunos where idade > 10;
 ```
+
+```
+Isso ok,
+
+```
+
+$$ \sigma_{idade > 10}( \Pi_{\text{nome, sexo, idade}}(Alunos) ) $$
+
+```
+Mas isso nok 
+```
+
+$$ \sigma_{idade > 10}( \Pi_{\text{nome, sexo}}(Alunos) ) $$
+
+
+```
+select nome, idade, sexo from alunos where idade > 10;
+```
