@@ -49,7 +49,7 @@ select V.modelo, V.placa, V.cor from veiculo as V inner join estaciona as E
 select V.modelo, V.placa, V.cor from veiculo as V inner join estaciona as E
 	on E.idveiculo = V.idveiculo;
   
-/* 9. Escrever a query SQL para exibir o modelo, a placa dos veículos estacionados em qualquer um dos pátios da empresa e que tenham a cor Prata. */
+/* 12. Escrever a query SQL para exibir o modelo, a placa dos veículos estacionados em qualquer um dos pátios da empresa e que tenham a cor Prata. */
 
 select V.modelo, V.placa from veiculo as V inner join estaciona as E
 	on E.idveiculo = V.idveiculo
