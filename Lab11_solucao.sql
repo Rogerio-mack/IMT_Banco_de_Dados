@@ -101,12 +101,6 @@ JOIN clientes c ON p.idCliente = c.idCliente
 JOIN vendedores v ON p.idVendedor = v.idVendedor
 WHERE c.nomeCliente LIKE '%Andrade%' AND v.quotaVendas < 10000; -- Valor e Andrade
 
--- Questão 4A
-SELECT c.nomeCliente
-FROM clientes c
-LEFT JOIN pedidos p ON c.idCliente = p.idCliente
-WHERE p.idPedido IS NULL;
-
 -- Questão 8A
 SELECT c.nomeCliente
 FROM clientes c
@@ -114,7 +108,6 @@ LEFT JOIN pedidos p ON c.idCliente = p.idCliente
 LEFT JOIN itensPedidos ip ON p.idPedido = ip.idPedido
 LEFT JOIN produtos pr ON ip.idProduto = pr.idProduto
 LEFT JOIN fabricantes f ON pr.idFabricante = f.idFabricante
--- WHERE f.descricaoFabricante IN ('Acer', 'Xiomi') -- Excluir
 GROUP BY c.nomeCliente
 HAVING COUNT(DISTINCT f.descricaoFabricante) = 2;
 
