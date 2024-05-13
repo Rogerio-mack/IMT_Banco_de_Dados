@@ -5,6 +5,8 @@
 
 [Lab 11 Solução](https://github.com/Rogerio-mack/IMT_Banco_de_Dados/blob/main/Lab11_solucao.sql)
 
+[Lab 11 Complemento self join](https://github.com/Rogerio-mack/IMT_Banco_de_Dados/blob/main/Lab11_complemento_selfjoin.sql)
+
 <br>
 
 [Q1](https://github.com/Rogerio-mack/IMT_Banco_de_Dados/blob/main/Q1.md)
