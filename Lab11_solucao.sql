@@ -4,6 +4,11 @@ FROM pedidos p
 JOIN clientes c ON p.idCliente = c.idCliente
 WHERE c.nomeCliente = 'Pedro de Souza Alves';
 
+SELECT idPedido, dataPedido, valorPedido
+FROM pedidos 
+JOIN clientes USING (idCliente)
+WHERE nomeCliente = 'Pedro de Souza Alves';
+
 -- Questão 2
 SELECT pr.descProduto
 FROM produtos pr
