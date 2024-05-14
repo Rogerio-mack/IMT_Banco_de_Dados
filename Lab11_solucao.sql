@@ -53,6 +53,16 @@ SELECT idPedido, dataPedido, valorPedido
 FROM pedidos
 WHERE valorPedido > (SELECT AVG(valorPedido) FROM pedidos);
 
+-- Desafio
+SELECT idPedido, dataPedido, valorPedido
+FROM pedidos
+WHERE valorPedido = (SELECT MAX(valorPedido) FROM pedidos);
+
+SELECT p1.idPedido, p1.dataPedido, p1.valorPedido 
+FROM pedidos p1 LEFT JOIN pedidos p2
+ON  p1.valorPedido < p2.valorPedido
+WHERE p2.idPedido IS NULL;   
+
 -- Questão 9
 SELECT pr.descProduto, c.nomeCliente, v.nomeVendedor
 FROM produtos pr
