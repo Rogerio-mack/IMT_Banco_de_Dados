@@ -43,7 +43,7 @@ JOIN fabricantes f ON pr.idFabricante = f.idFabricante
 WHERE c.nomeCliente = 'Beatriz Souza' AND f.descricaoFabricante in ('HP','Acer','Corsair'); -- HP or Acer or Corsair
 
 -- Questão 7
-SELECT v.nomeVendedor, c.nomeCliente
+SELECT DISTINCT v.nomeVendedor, c.nomeCliente
 FROM vendedores v
 JOIN pedidos p ON v.idVendedor = p.idVendedor
 JOIN clientes c ON p.idCliente = c.idCliente;
