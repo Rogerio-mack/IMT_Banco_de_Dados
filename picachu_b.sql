@@ -28,6 +28,11 @@ SELECT COUNT(CustomerID) AS TotalCustomers
 SELECT OrderDate
   FROM Orders
  ORDER BY OrderDate ASC limit 1;
+ 
+SELECT OrderDate
+  FROM Orders
+  WHERE OrderDate = (SELECT MIN(OrderDate)
+					 FROM Orders);
 
 /*
 4. Mostre uma lista de países onde a empresa Northwind tem clientes.
@@ -36,6 +41,9 @@ SELECT OrderDate
 SELECT Country
   FROM Customers
  GROUP BY Country;
+ 
+SELECT DISTINCT Country
+  FROM Customers; 
 
 /*
 4B. Liste a quantidade de pedidos feitos por cada funcionário.
@@ -57,4 +65,4 @@ JOIN Customers AS C
 	ON O.CustomerID = C.CustomerID
 JOIN OrderDetails AS D
 	ON O.OrderID = D.OrderID 
-GROUP BY CustomerID
+GROUP BY CustomerID;
