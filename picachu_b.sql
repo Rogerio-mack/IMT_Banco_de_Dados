@@ -11,7 +11,8 @@ SELECT  OrderId
 	   ,UnitPrice
 	   ,Quantity
 	   ,(UnitPrice * Quantity) AS TotalPrice
-  FROM OrderDetails;
+  FROM OrderDetails
+  ORDER BY OrderId, ProductID;
 
 /*
 2. Quantos clientes temos na tabela Clientes?
