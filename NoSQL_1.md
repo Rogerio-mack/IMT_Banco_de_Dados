@@ -10,6 +10,7 @@
    - Exemplos de sistemas de gerenciamento de banco de dados relacionais (MySQL, PostgreSQL, Oracle).
 
 ## 3. **Limitações dos Bancos de Dados Relacionais**
+O foco desses sistemas é o de transações, tipicamente operações que envolvem poucos dados.
    - **Escalabilidade**
      - Dificuldades em escalar horizontalmente (sharding).
      - Limitações em ambientes de Big Data.
@@ -24,6 +25,18 @@
    - **Complexidade em Dados Distribuídos**
      - Gerenciamento complexo de dados em sistemas distribuídos.
      - Problemas com consistência e disponibilidade (CAP Theorem).
+
+> **Bancos de dados objeto-relacionais (ODBR)**
+> São sistemas de gerenciamento de banco de dados que combinam recursos relacionais com características de bancos de dados orientados a objetos que incluem:
+> - Tipos de dados abstratos (tipos de dados definidos pelo usuário, permitindo a criação de objetos complexos com atributos e métodos).
+> - Herança (hierarquias de classes).
+> - Encapsulamento
+> - Polimorfismo
+> - Linguagem de consulta orientada a objetos (além do SQL tradicional, OQL, Object Query Language).
+> Alguns desses sistemas são:
+> - Oracle Database (com recursos orientados a objetos)
+> - IBM DB2 (com extensões orientadas a objetos)
+> - PostgreSQL (com tipos de dados abstratos e linguagem de consulta orientada a objetos)
 
 ## 4. **Casos de Uso e Exemplos Reais**
    - Discussão: que casos de uso os bancos de dados relacionais não são ideais?
