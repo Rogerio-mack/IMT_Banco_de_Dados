@@ -1,24 +1,16 @@
 <img src="https://github.com/Rogerio-mack/IMT_CD_2024/blob/main/maua_logo.png?raw=true" width=300, align="right">
 <br>
 
-# Banco de Dados
+# Lab Banco de Dados NoSQL
 
-[Lab 11 Solução](https://github.com/Rogerio-mack/IMT_Banco_de_Dados/blob/main/Lab11_solucao.sql)
 
-[Lab 11 Complemento self join](https://github.com/Rogerio-mack/IMT_Banco_de_Dados/blob/main/Lab11_complemento_selfjoin.sql)
+### Lab 1: Revisão de bancos de dados relacionais
 
-<br>
+![imagem](https://github.com/Rogerio-mack/IMT_Banco_de_Dados/blob/main/Figuras/DBMS_components.png?raw=true)
 
-[Q1](https://github.com/Rogerio-mack/IMT_Banco_de_Dados/blob/main/Q1.md)
+![image](https://github.com/user-attachments/assets/711d5b62-ba2d-4fff-896a-fea910be9cf6)
 
-[Q2](https://github.com/Rogerio-mack/IMT_Banco_de_Dados/blob/main/Q2.md)
+* [Create Tables](https://github.com/Rogerio-mack/IMT_Banco_de_Dados/blob/main/LAB_1_SQL_CREATE_DATABASE_CISCO.sql)
 
-[Q3](https://github.com/Rogerio-mack/IMT_Banco_de_Dados/blob/main/Q3.md)
+* [Query Tables](https://github.com/Rogerio-mack/IMT_Banco_de_Dados/blob/main/LAB_1_SQL_QUERIES_DATABASE_CISCO.sql)
 
-[Q4](https://github.com/Rogerio-mack/IMT_Banco_de_Dados/blob/main/Q4.md)
-
-[Q5](https://github.com/Rogerio-mack/IMT_Banco_de_Dados/blob/main/Q5.md)
-
-[Q6](https://github.com/Rogerio-mack/IMT_Banco_de_Dados/blob/main/Q6.md)
-
-[Q7](https://github.com/Rogerio-mack/IMT_Banco_de_Dados/blob/main/Q7.md)
