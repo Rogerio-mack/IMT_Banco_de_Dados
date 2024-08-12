@@ -211,7 +211,7 @@ INSERT INTO instrutor VALUES (15,'Tania Franco','F','Rua Zeta Beta,40', 11988077
 SELECT * FROM instrutor;
 
 -- tabela instrutor leciona modulo
-DROP TABLE instrutor_modulo CASCADE ;
+-- DROP TABLE instrutor_modulo CASCADE ;
 CREATE TABLE instrutor_modulo
 ( cod_instrutor NUMERIC(5) NOT NULL,
   sigla_modulo CHAR(5) NOT NULL,
@@ -275,7 +275,8 @@ desc modulo ;
 ALTER TABLE modulo DROP column qtde_aulas, DROP COLUMN duracao_aula ;
 
 -- mudando o tipo de dado
-DESCRIBE instrutor 
+DESCRIBE instrutor;
+
 ALTER TABLE instrutor MODIFY nome_instrutor CHAR(30) ;
 
 -- adicionando nova coluna 
@@ -293,11 +294,11 @@ ALTER TABLE aluno_certificacao MODIFY dt_matricula TIMESTAMP DEFAULT current_tim
 ALTER TABLE instrutor_certificacao MODIFY dt_conclusao TIMESTAMP DEFAULT current_timestamp;
 
 -- renomeando a coluna - clausula CHANGE
-DESC aluno_certificacao
+DESC aluno_certificacao;
 ALTER TABLE aluno_certificacao CHANGE dt_matricula dt_hora_matricula TIMESTAMP ; 
 ALTER TABLE aluno_certificacao CHANGE dt_hora_matricula dt_matricula TIMESTAMP ; 
 -- renomeando uma tabela
-SHOW TABLES
+SHOW TABLES;
 ALTER TABLE instrutor_certificacao RENAME instrutor_certificacao_novo;
 ALTER TABLE instrutor_certificacao_novo RENAME instrutor_certificacao ;
 -- check em situação da matricula
@@ -317,9 +318,9 @@ WHERE dt_conclusao IS NOT NULL ;
 -- deprecated ALTER TABLE aluno_certificacao CHANGE situacao_matricula situacao_matricula CHAR(15) BINARY NOT NULL;
 ALTER TABLE aluno_certificacao MODIFY situacao_matricula CHAR(15) COLLATE utf8mb4_bin;
 
-INSERT INTO aluno_certificacao VALUES ( 5, 'CCENT', current_date - INTERVAL '10' DAY, null, 'teste' ) ;
-INSERT INTO aluno_certificacao VALUES ( 5, 'CCNP', current_date - INTERVAL '10' DAY, null, 'cursando' ) ;
-INSERT INTO aluno_certificacao VALUES ( 5, 'CCNA', current_date - INTERVAL '10' DAY, null, 'CURSANDO' ) ;
+INSERT INTO aluno_certificacao VALUES ( 6, 'CCENT', current_date - INTERVAL '10' DAY, null, 'teste' ) ;
+INSERT INTO aluno_certificacao VALUES ( 7, 'CCNP', current_date - INTERVAL '10' DAY, null, 'cursando' ) ;
+INSERT INTO aluno_certificacao VALUES ( 8, 'CCNA', current_date - INTERVAL '10' DAY, null, 'CURSANDO' ) ;
 SELECT * FROM aluno_certificacao ;
 DESC aluno_certificacao ;
 
