@@ -83,6 +83,7 @@ WHERE m.carga_horaria_modulo = (
                                      SELECT MAX(carga_horaria_modulo) FROM modulo );
 
 /* 11 - Mostrar a quantidade de alunos que cursam/cursaram cada modulo */
+/*
 SELECT m.nome_modulo, COUNT(*) AS Qtde_alunos
 FROM aluno a, aluno_modulo am, modulo m
 INNER JOIN aluno_modulo am
@@ -91,6 +92,7 @@ INNER JOIN modulo m
 ON am.sigla_modulo = m.sigla_modulo
 GROUP BY m.nome_modulo
 ORDER BY 2 DESC ;
+*/
 
 /* 12 - Mostrar o nome das certificacões que já ultrapassaram 100 alunas matriculadas ( sexo feminino) ao longo do tempo.*/
 
