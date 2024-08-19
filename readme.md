@@ -10,6 +10,8 @@
 
 ![image](https://github.com/user-attachments/assets/711d5b62-ba2d-4fff-896a-fea910be9cf6)
 
+### Lab 2: Revisão de bancos de dados relacionais: CREATE & QUERY TABLES
+
 * [Create Tables](https://github.com/Rogerio-mack/IMT_Banco_de_Dados/blob/main/LAB_1_SQL_CREATE_DATABASE_CISCO.sql)
 
 * [Query Tables](https://github.com/Rogerio-mack/IMT_Banco_de_Dados/blob/main/LAB_1_SQL_QUERIES_DATABASE_CISCO.sql)
