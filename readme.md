@@ -14,3 +14,9 @@
 
 * [Query Tables](https://github.com/Rogerio-mack/IMT_Banco_de_Dados/blob/main/LAB_1_SQL_QUERIES_DATABASE_CISCO.sql)
 
+### Lab 3: MongoDB CRUD
+
+* [Materiais da Aula](https://github.com/Rogerio-mack/IMT_Banco_de_Dados/tree/main/Aula_03)
+
+* [MongoDB, Cloud Atlas](https://www.mongodb.com/)
+
