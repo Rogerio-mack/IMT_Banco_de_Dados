@@ -22,5 +22,5 @@
 
 * [MongoDB, Cloud Atlas](https://www.mongodb.com/)
 
-<img src="https://github.com/Rogerio-mack/IMT_Banco_de_Dados/blob/main/Figuras/MongoDB-Relacional.png?raw=true" width=300, align="right">
+<img src="https://github.com/Rogerio-mack/IMT_Banco_de_Dados/blob/main/Figuras/MongoDB-Relacional.png?raw=true" width=800, align="left">
 <br>
