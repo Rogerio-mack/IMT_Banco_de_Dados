@@ -1,0 +1,33 @@
+use inventario_si
+// mostrando os databases
+show databases
+// criando coleção empresa
+db.empresa.drop()
+db.empresa.insertOne({razao_social: 'Microsoft do Brasil Ltda', cnpj: 123456,
+ endereco: {rua: 'Engenheiro Beerini', numero: 1000, bairro : 'Broklin', 
+            cidade: 'Sao Paulo' } , fones: [1156564444, 1156562222] } )
+// consultar
+db.empresa.find({})
+// inserindo mais de uma empresa
+db.empresa.insertMany([{razao_social : 'Apple Corporation Brasil Ltda', 
+    tipo_empresa: 'Fabricante', endereco: 'Av Brigadeiro Faria Lima, 100',
+    bairro : 'Itaim Bibi', cidade: 'São Paulo', 
+    fones: [{ddd:11, numero: 34567890}, {ddd:11, numero: 34569000}] },
+{razao_social: 'ABC Equipamentos Ltda',
+endereco: 'Av Goias, 1000 - Centro - São Caetano do Sul',
+tipo_empresa: 'Fornecedor', tipo_produto: 'Hardware'}])
+// atualizando um documento 
+db.empresa.find({razao_social : 'Microsoft do Brasil Ltda' })
+// uso do LIKE 
+db.empresa.find({razao_social : /microsoft/i })
+// update 
+db.empresa.updateOne({razao_social : /microsoft/i }, 
+{$set: {"endereco.rua": 'Engenheiro Berrini'} })
+// criando sem querer um dado repetido
+// executando a linha 6 novamente -> 2 microsofts
+db.empresa.deleteOne({_id : ObjectId("66bf741baca4170e93bfbefe")})
+// incluindo o tipo de empresa na Microsoft
+db.empresa.updateOne({razao_social : /microsoft/i }, 
+{$set: {Tipo_empresa: 'Fabricante'}} )
+
+

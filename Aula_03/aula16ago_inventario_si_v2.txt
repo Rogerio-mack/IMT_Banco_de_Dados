@@ -1,0 +1,58 @@
+use inventario_si
+// mostrando os databases
+show databases
+// criando coleção empresa
+db.empresa.drop()
+db.empresa.insertOne({razao_social: 'Microsoft do Brasil Ltda', cnpj: 123456,
+ endereco: {rua: 'Engenheiro Beerini', numero: 1000, bairro : 'Broklin', 
+            cidade: 'Sao Paulo' } , fones: [1156564444, 1156562222] } )
+			// digitei errado Berini para atualizar depois
+// consultar
+db.empresa.find({})
+// inserindo mais de uma empresa
+db.empresa.insertMany([{razao_social : 'Apple Corporation Brasil Ltda', 
+    tipo_empresa: 'Fabricante', endereco: 'Av Brigadeiro Faria Lima, 100',
+    bairro : 'Itaim Bibi', cidade: 'São Paulo', 
+    fones: [{ddd:11, numero: 34567890}, {ddd:11, numero: 34569000}] },
+{razao_social: 'ABC Equipamentos Ltda',
+endereco: 'Av Goias, 1000 - Centro - São Caetano do Sul',
+tipo_empresa: 'Fornecedor', tipo_produto: 'Hardware'}])
+// atualizando um documento 
+db.empresa.find({razao_social : 'Microsoft do Brasil Ltda' })
+// uso do LIKE 
+db.empresa.find({razao_social : /microsoft/i })
+// update  - consertando o endereço da microsoft
+db.empresa.updateOne({razao_social : /microsoft/i }, 
+{$set: {"endereco.rua": 'Engenheiro Berrini'} })
+// criando sem querer um dado repetido
+// executando a linha 6 novamente -> 2 microsofts
+db.empresa.deleteOne({_id : ObjectId("66bf741baca4170e93bfbefe")})
+// incluindo o tipo de empresa na Microsoft
+db.empresa.updateOne({razao_social : /microsoft/i }, 
+{$set: {Tipo_empresa: 'Fabricante'}} )
+
+// 1a aula parei aqui, ia continuar com update e operadores de comparação numéricos
+// atualizando as empresas com o ano de fundação
+db.empresa.updateOne({razao_social : /microsoft/i}, {$set : {ano_fundacao: 1975}})
+db.empresa.updateOne({razao_social : /apple/i}, {$set : {ano_fundacao: 1976}})
+// operadores de comparação numericos
+db.empresa.find ({ano_fundacao : 1975})
+// não igual - diferente
+db.empresa.find ({ano_fundacao : {$ne : 1975}}) // not equal numero, caracter not
+db.empresa.find({tipo: {$not: /Fabricante/i }})
+// maior, maior ou igual, menor, menor igual
+db.empresa.find ({ano_fundacao : {$gt : 1975}}) // maior - greater than
+db.empresa.find ({ano_fundacao : {$gte : 1975}}) // maior ou igual - greater than or equal
+db.empresa.find ({ano_fundacao : {$lt : 1975}})  // menor - less than
+db.empresa.find ({ano_fundacao : {$lte : 1975}})  // menor ou igual less than or equal
+//usando o regex , expresao regular , forma antiga de consultar pedaços de texto
+db.empresa.find({tipo: {$regex: /FabRIcante/i}})
+db.empresa.find({tipo: /FabRIcante/i})
+// usando OR no find 
+db.empresa.find({ $or : [{tipo: /fabrica/i} , { razao_social : /brasil/i} ,
+                         {ano_fundacao : {$gt : 1975} } ] } )
+db.empresa.find({})
+
+
+
+
