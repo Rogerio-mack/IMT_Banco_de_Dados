@@ -26,6 +26,7 @@
 
 <br>
 
+
 ### Lab 4: MongoDB Regex, $and, $or, $not, $nor, arrays
 
 * [Material da Aula (1)](https://github.com/Rogerio-mack/IMT_Banco_de_Dados/blob/main/aula04.md)
