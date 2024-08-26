@@ -24,3 +24,11 @@
 
 <img src="https://github.com/Rogerio-mack/IMT_Banco_de_Dados/blob/main/Figuras/MongoDB-Relacional.png?raw=true" width=800, align="left">
 <br>
+
+### Lab 4: MongoDB Regex, $and, $or, $not, $nor, arrays
+
+* [Material da Aula (1)](https://github.com/Rogerio-mack/IMT_Banco_de_Dados/blob/main/aula04.md)
+* [Exercícios (1)](https://github.com/Rogerio-mack/IMT_Banco_de_Dados/blob/main/aula04_ex.md)
+* [Material da Aula (2)](https://github.com/Rogerio-mack/IMT_Banco_de_Dados/blob/main/aula04b.md)
+* [Material da Aula (3)](https://github.com/Rogerio-mack/IMT_Banco_de_Dados/blob/main/aula04c.md)
+
