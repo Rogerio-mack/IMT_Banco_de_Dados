@@ -32,7 +32,7 @@
 * [Material da Aula (2)](https://github.com/Rogerio-mack/IMT_Banco_de_Dados/blob/main/aula04b.md)
 * [Material da Aula (3)](https://github.com/Rogerio-mack/IMT_Banco_de_Dados/blob/main/aula04c.md)
 
-### Lab 4: MongoDB Relacionamentos
+### Lab 5: MongoDB Relacionamentos
 
 * [Exercícios Arrays](https://github.com/Rogerio-mack/IMT_Banco_de_Dados/blob/main/aula04_arrays_ex.md) |
 [Solução](https://github.com/Rogerio-mack/IMT_Banco_de_Dados/blob/main/aula04_arrays_ex_solucao.md)
