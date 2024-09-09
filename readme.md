@@ -38,4 +38,14 @@
 [Solução](https://github.com/Rogerio-mack/IMT_Banco_de_Dados/blob/main/aula04_arrays_ex_solucao.md)
 * [Relacionamentos](https://github.com/Rogerio-mack/IMT_Banco_de_Dados/blob/main/aula05_relacionamentos.md)
 * [Relacionamentos Exercícios](https://github.com/Rogerio-mack/IMT_Banco_de_Dados/blob/main/aula05_ex_relacionamentos.md) |
-[Solução](https://github.com/Rogerio-mack/IMT_Banco_de_Dados/blob/main/aula05_ex_relacionamentos_solucao.md) 
+[Solução](https://github.com/Rogerio-mack/IMT_Banco_de_Dados/blob/main/aula05_ex_relacionamentos_solucao.md)
+
+### Lab 6: MongoDB Imports e Agregações
+
+* [Imports e Agregações](https://github.com/Rogerio-mack/IMT_Banco_de_Dados/blob/main/aula06.md)
+* [Imports e Agregaçõess Exercícios](https://github.com/Rogerio-mack/IMT_Banco_de_Dados/blob/main/aula06_ex.md) |
+[Solução](https://github.com/Rogerio-mack/IMT_Banco_de_Dados/blob/main/aula06_ex_solucao.md)
+
+* [Lab Avaliativo 2](https://colab.research.google.com/github/Rogerio-mack/IMT_Banco_de_Dados/blob/main/Lab_2Bimestre.ipynb), *20 de Setembro*
+
+
