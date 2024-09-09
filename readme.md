@@ -46,6 +46,6 @@
 * [Imports e Agregaçõess Exercícios](https://github.com/Rogerio-mack/IMT_Banco_de_Dados/blob/main/aula06_ex.md) |
 [Solução](https://github.com/Rogerio-mack/IMT_Banco_de_Dados/blob/main/aula06_ex_solucao.md)
 
-* [Lab Avaliativo 2](https://colab.research.google.com/github/Rogerio-mack/IMT_Banco_de_Dados/blob/main/Lab_2Bimestre.ipynb), *20 de Setembro*
+> * [**Lab Avaliativo 2**](https://colab.research.google.com/github/Rogerio-mack/IMT_Banco_de_Dados/blob/main/Lab_2Bimestre.ipynb), *20 de Setembro*
 
 
