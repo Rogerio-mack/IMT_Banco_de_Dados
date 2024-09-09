@@ -38,7 +38,7 @@
 [Solução](https://github.com/Rogerio-mack/IMT_Banco_de_Dados/blob/main/aula04_arrays_ex_solucao.md)
 * [Relacionamentos](https://github.com/Rogerio-mack/IMT_Banco_de_Dados/blob/main/aula05_relacionamentos.md)
 * [Relacionamentos Exercícios](https://github.com/Rogerio-mack/IMT_Banco_de_Dados/blob/main/aula05_ex_relacionamentos.md) |
-[Solução](https://github.com/Rogerio-mack/IMT_Banco_de_Dados/blob/main/aula05_ex_relacionamentos_solucao.md)
+[Solução](https://github.com/Rogerio-mack/IMT_Banco_de_Dados/blob/main/aula05_ex_solucao.md)
 
 ### Lab 6: MongoDB Imports e Agregações
 
