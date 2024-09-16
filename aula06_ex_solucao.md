@@ -62,7 +62,7 @@ Para importar o arquivo CSV `tracks_df.csv` para a coleção `Tracks_csv`, o com
 mongoimport --db mydb --collection Tracks_csv --type csv --headerline --file /path/tracks_df.csv
 ```
 
-O parâmetro `--headerline` informa que a primeira linha do arquivo CSV contém os nomes dos campos.
+O parâmetro `--headerline` informa que a primeira linha do arquivo CSV contém os nomes dos campos. **ATENÇÂO: requer o MongoDB Command Line Database Tools instalado.**
 
 ---
 
@@ -74,7 +74,7 @@ Para importar o arquivo JSON `tracks.json` para a coleção `Tracks_Artist`, o c
 mongoimport --db mydb --collection Tracks_Artist --file /path/tracks.json --jsonArray
 ```
 
-O parâmetro `--jsonArray` é necessário para indicar que o arquivo contém um array de documentos JSON. E talvez você tenha que editar o arquivo fazendo algum ajuste.
+O parâmetro `--jsonArray` é necessário para indicar que o arquivo contém um array de documentos JSON. E talvez você tenha que editar o arquivo fazendo algum ajuste.  **ATENÇÂO: requer o MongoDB Command Line Database Tools instalado.**
 
 ---
 
