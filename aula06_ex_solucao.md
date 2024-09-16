@@ -50,7 +50,6 @@ Dada a mesma coleção `vendas`, crie uma agregação que retorne a quantidade t
 
 ---
 
----
 
 ## Respostas  
 
