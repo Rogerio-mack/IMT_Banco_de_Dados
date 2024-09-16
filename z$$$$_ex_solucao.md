@@ -64,6 +64,25 @@ mongoimport --db mydb --collection Tracks_csv --type csv --headerline --file /pa
 
 O parâmetro `--headerline` informa que a primeira linha do arquivo CSV contém os nomes dos campos. **ATENÇÂO: requer o MongoDB Command Line Database Tools instalado.**
 
+Mas você pode fazer via NOSQLBOOSTER
+
+```javascript
+const contents = [
+    {
+        content: "C:\\Users\\User\\Downloads\\tracks_df.csv",
+        collection: "Tracks_csv",
+        idPolicy: "overwrite_with_same_id",     }
+];
+
+mb.importContent({
+    connection: "mongodb+srv://cluster0.bfq2t.mongodb.net",
+    database: "mydb",
+    fromType: "file",
+    batchSize: 2000,
+    contents
+})
+```
+
 ---
 
 **Exercício 2 - Solução:**
@@ -75,6 +94,24 @@ mongoimport --db mydb --collection Tracks_Artist --file /path/tracks.json --json
 ```
 
 O parâmetro `--jsonArray` é necessário para indicar que o arquivo contém um array de documentos JSON. E talvez você tenha que editar o arquivo fazendo algum ajuste.  **ATENÇÂO: requer o MongoDB Command Line Database Tools instalado.**
+
+```javascript
+const contents = [
+    {
+        content: "C:\\Users\\User\\Downloads\\tracks.json",
+        collection: "Tracks_Artist",
+        idPolicy: "overwrite_with_same_id", 
+    }
+];
+
+mb.importContent({
+    connection: "mongodb+srv://cluster0.bfq2t.mongodb.net",
+    database: "mydb",
+    fromType: "file",
+    batchSize: 2000,
+    contents
+})
+```
 
 ---
 
