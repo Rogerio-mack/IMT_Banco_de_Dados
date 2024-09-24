@@ -113,5 +113,3 @@ db.vendas.aggregate([
 ```
 
 
-
-Esses exemplos revisam comandos básicos e intermediários do MongoDB que seus alunos podem usar para praticar.
