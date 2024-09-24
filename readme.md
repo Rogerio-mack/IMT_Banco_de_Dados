@@ -49,3 +49,7 @@
 ### Lab 7: Review
 
 * [Solução Lab (Parcial)](https://github.com/Rogerio-mack/IMT_Banco_de_Dados/blob/main/aula07.md)
+
+### Exemplos de Revisão para prova
+
+* [Exemplos de Revisão](https://github.com/Rogerio-mack/IMT_Banco_de_Dados/blob/main/revisao2.md)
