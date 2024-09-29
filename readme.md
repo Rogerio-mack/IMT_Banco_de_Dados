@@ -56,4 +56,5 @@
 
 ### Lab 9: Gabarito/Correção P1
 
-* [Gabarito/Correção P1)](https://github.com/Rogerio-mack/IMT_Banco_de_Dados/blob/main/gabarito_P1.md)
+* [Gabarito/Correção P1)](https://github.com/Rogerio-mack/IMT_Banco_de_Dados/blob/main/gabarito_P1.md) | Reunião da Comissão com os Docentes de CIC 
+
