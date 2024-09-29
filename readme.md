@@ -53,3 +53,7 @@
 ### Exemplos de Revisão para prova
 
 * [Exemplos de Revisão](https://github.com/Rogerio-mack/IMT_Banco_de_Dados/blob/main/revisao2.md)
+
+### Lab 9: Gabarito/Correção P1
+
+* [Gabarito/Correção P1)](https://github.com/Rogerio-mack/IMT_Banco_de_Dados/blob/main/gabarito_P1.md)
