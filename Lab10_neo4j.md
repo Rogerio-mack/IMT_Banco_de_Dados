@@ -145,6 +145,8 @@ A consulta acima, é mais complexa. e corresponde ao `SHORTEST` caminho de Anna 
 
 ![imagem](https://github.com/Rogerio-mack/IMT_Banco_de_Dados/blob/main/Figuras/neo4jsite.PNG?raw=true)
 
+Acessando através do [Python (Colab)](https://colab.research.google.com/github/Rogerio-mack/IMT_Banco_de_Dados/blob/main/neo4j.ipynb#scrollTo=YDuHD7bss42o). 
+
 ## Limpando os Dados (Reset)
 
 Antes de começarmos, vamos garantir que não haja nenhum dado na nossa base.
