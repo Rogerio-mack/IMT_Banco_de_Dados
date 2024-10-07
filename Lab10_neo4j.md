@@ -143,9 +143,9 @@ A consulta acima, é mais complexa. e corresponde ao `SHORTEST` caminho de Anna 
 
 [Aura DB & Neo4j Desktop Download](https://neo4j.com), crie aqui um usuário e uma instância Neo4j, ou baixe o Neo4j Desktop.
 
-![imagem](https://github.com/Rogerio-mack/IMT_Banco_de_Dados/blob/main/Figuras/neo4jsite.PNG?raw=true)
+![imagem](https://github.com/Rogerio-mack/IMT_Banco_de_Dados/blob/main/Figuras/neo4jsite.png?raw=true)
 
-Acessando através do [Python (Colab)](https://colab.research.google.com/github/Rogerio-mack/IMT_Banco_de_Dados/blob/main/neo4j.ipynb#scrollTo=YDuHD7bss42o). 
+Acessando através do [Python (Colab)](https://colab.research.google.com/github/Rogerio-mack/IMT_Banco_de_Dados/blob/main/neo4j.ipynb). 
 
 ## Limpando os Dados (Reset)
 
