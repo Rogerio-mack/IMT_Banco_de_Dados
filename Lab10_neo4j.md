@@ -2,6 +2,94 @@
 
 Aqui você vai encontrar operações básicas de **C**reate, **R**ead, **U**pdate e **D**elete de dados no **Neo4j** envolvend dados de **filmes** e **artistas**.
 
+## O que é Cypher?
+
+Cypher (veja a documentação [aqui](https://neo4j.com/docs/cypher-manual/current/introduction/cypher-overview/) é a linguagem de consulta de gráfico declarativa da Neo4j. Foi criada em 2011 por engenheiros da Neo4j como uma linguagem equivalente a SQL para bancos de dados de gráfico. Semelhante ao SQL, o Cypher permite que os usuários se concentrem no que recuperar do gráfico, em vez de como recuperá-lo. 
+
+O Cypher fornece uma maneira visual de combinar padrões e relacionamentos. Ele se baseia no seguinte tipo de sintaxe ascii-art: `(nodes)-[:CONNECT_TO]->(otherNodes)`. Colchetes arredondados são usados ​​para nós circulares e `-[:ARROWS]->` para relacionamentos. Escrever uma consulta é efetivamente como desenhar um padrão através dos dados no gráfico (será? rs). 
+
+## Cypher $\times$ SQL
+
+Consultas SQL começam com o que um usuário quer retornar, enquanto consultas Cypher terminam com a cláusula return.
+
+```SQL
+SELECT movie.name
+FROM movie
+WHERE movie.rating > 7
+```
+
+```cypher
+MATCH (movie:Movie)
+WHERE movie.rating > 7
+RETURN movie.title
+```
+Uma consulta mais complexa...
+
+```SQL
+SELECT actors.name
+FROM actors
+ 	LEFT JOIN acted_in ON acted_in.actor_id = actors.id
+	LEFT JOIN movies ON movies.id = acted_in.movie_id
+WHERE movies.title = "The Matrix"
+```
+
+```cypher
+MATCH (actor:Actor)-[:ACTED_IN]->(movie:Movie {title: 'The Matrix'})
+RETURN actor.name
+```
+
+## Consultas
+
+### Conceitos básicos
+
+Fundamentalmente, um banco de dados de gráficos Neo4j consiste em três entidades principais: **nós, relacionamentos e caminhos**. As consultas Cypher são construídas para corresponder ou criar essas entidades em um gráfico. 
+
+#### Nós
+As entidades de dados em um banco de dados de gráficos Neo4j são chamadas de nós. Os nós são referenciados no Cypher usando parênteses ().
+
+```cypher
+MATCH (n:Person {name:'Anna'})
+RETURN n.born AS birthYear
+```
+
+* `Person` é um **rótulo**. Rótulos são como tags e são usados ​​para consultar o banco de dados para nós específicos. Um nó pode ter vários rótulos, por exemplo `Person` e `Actor`.
+
+* `name` é uma **propriedade** definida como Anna. As propriedades são definidas entre chaves, {}, e são usadas para fornecer aos nós informações específicas.
+
+* **variável**, `n`. Variáveis são empregadas para referenciar nós especificados em cláusulas subsequentes.
+
+#### Relacionamentos
+Os nós em um gráfico podem ser conectados com relacionamentos. Um relacionamento deve ter um nó inicial, um nó final e exatamente um tipo. Os relacionamentos são representados no Cypher com setas (por exemplo, `->`) indicando a direção de um relacionamento.
+
+```cypher
+//
+// quantos amigos Anna conhecer desde antes de 2023?
+//
+MATCH (:Person {name: 'Anna'})-[r:KNOWS WHERE r.since < 2023]->(friend:Person)
+RETURN count(r) As numberOfFriends
+```
+
+Diferentemente dos nós, as informações dentro de um padrão de relacionamento devem ser colocadas entre colchetes. 
+
+Embora os nós possam ter vários rótulos, os relacionamentos podem ter apenas um.
+
+#### Caminhos
+Caminhos em um gráfico consistem em nós e relacionamentos conectados. 
+
+```cypher
+MATCH (n:Person {name: 'Anna'})-[:KNOWS]-{1,5}(friend:Person WHERE n.born < friend.born)
+RETURN DISTINCT friend.name AS olderConnections
+```
+
+Este exemplo busca todos os caminhos até 5 *hops away* de apenas de relacionamentos do tipo KNOWS, do nó inicial Anna para outros Person em que Person são pessoas mais velhas (cláusula WHERE). 
+
+```cypher
+MATCH p = SHORTEST 1 (:Person {name: 'Anna'})-[:KNOWS]-+(:Person {nationality: 'Canadian'})
+RETURN p
+```
+
+A consulta acima, é mais complexa. e corresponde ao `SHORTEST` caminho de Anna para outro Person com uma nacionalidade definida como Canadian.
+
 ## Limpando os Dados (Reset)
 
 Antes de começarmos, vamos garantir que não haja nenhum dado na nossa base.
