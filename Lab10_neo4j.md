@@ -58,6 +58,19 @@ RETURN n.born AS birthYear
 
 * **variável**, `n`. Variáveis são empregadas para referenciar nós especificados em cláusulas subsequentes.
 
+Este é um modelo de dados Neo4j:
+
+![imagem](https://github.com/Rogerio-mack/IMT_Banco_de_Dados/blob/main/Figuras/neo4jschema.PNG?raw=true)
+
+Ele inclui dois tipos de rótulos de nós:
+
+* `Person` nós, que têm as seguintes propriedades: `name` e `born`.
+
+* `Movie` nós, que têm as seguintes propriedades: `title`, `released`, e `tagline`.
+
+O modelo também contém cinco tipos de relacionamento diferentes entre os nós Persone Movie: `ACTED_IN, DIRECTED, PRODUCED, WROTE`, e `REVIEWED`. Dois dos tipos de relacionamento têm propriedades (`ACTED_IN` e `REVIEWED`). 
+
+
 #### Relacionamentos
 Os nós em um gráfico podem ser conectados com relacionamentos. Um relacionamento deve ter um nó inicial, um nó final e exatamente um tipo. Os relacionamentos são representados no Cypher com setas (por exemplo, `->`) indicando a direção de um relacionamento.
 
@@ -82,7 +95,7 @@ Embora os nós possam ter vários rótulos, os relacionamentos podem ter apenas 
   CREATE (p:Pessoa:Cliente:VIP {nome: "João", idade: 30, email: "joao@email.com"})
   ```
 
-Aqui, o nó `p` tem os rótulos `Pessoa`, `Cliente` e `VIP`. Dependendo da consulta, ele pode ser tratado como qualquer um desses rótulos.
+> Aqui, o nó `p` tem os rótulos `Pessoa`, `Cliente` e `VIP`. Dependendo da consulta, ele pode ser tratado como qualquer um desses rótulos.
 
   ```cypher
   MATCH (p:Pessoa) RETURN p
