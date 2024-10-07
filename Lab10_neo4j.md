@@ -139,6 +139,12 @@ RETURN p
 
 A consulta acima, é mais complexa. e corresponde ao `SHORTEST` caminho de Anna para outro Person com uma nacionalidade definida como Canadian.
 
+## Aura DB & Neo4j Desktop
+
+[Aura DB & Neo4j Desktop Download](https://neo4j.com), crie aqui um usuário e uma instância Neo4j, ou baixe o Neo4j Desktop.
+
+![imagem](https://github.com/Rogerio-mack/IMT_Banco_de_Dados/blob/main/Figuras/neo4jsite.PNG?raw=true)
+
 ## Limpando os Dados (Reset)
 
 Antes de começarmos, vamos garantir que não haja nenhum dado na nossa base.
