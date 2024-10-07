@@ -73,6 +73,42 @@ Diferentemente dos nós, as informações dentro de um padrão de relacionamento
 
 Embora os nós possam ter vários rótulos, os relacionamentos podem ter apenas um.
 
+> No Neo4J, os nós podem ter múltiplos rótulos (labels), enquanto os relacionamentos são restritos a um único rótulo. Essa diferença se deve ao propósito que cada entidade serve dentro de um banco de dados de grafos.
+
+> **a. Nós com múltiplos rótulos**
+> Os nós são as entidades do grafo, representando objetos como pessoas, produtos, locais, etc. Um nó pode ter múltiplos rótulos para classificar e categorizar um mesmo objeto de maneiras diferentes. 
+
+  ```cypher
+  CREATE (p:Pessoa:Cliente:VIP {nome: "João", idade: 30, email: "joao@email.com"})
+  ```
+
+Aqui, o nó `p` tem os rótulos `Pessoa`, `Cliente` e `VIP`. Dependendo da consulta, ele pode ser tratado como qualquer um desses rótulos.
+
+  ```cypher
+  MATCH (p:Pessoa) RETURN p
+  ```
+
+  ```cypher
+  MATCH (p:Cliente) RETURN p
+  ```
+
+  ```cypher
+  MATCH (p:Cliente:VIP) RETURN p
+  ```
+
+> **b. Relacionamentos com um único rótulo**
+> Os relacionamentos no Neo4J conectam nós e indicam a natureza da relação entre eles. Diferentemente dos nós, os relacionamentos só podem ter um tipo (ou rótulo), porque seu propósito é definir como dois nós se relacionam em um único contexto. No entanto, é possível que um mesmo par de nós tenha mais de um relacionamento de tipos diferentes.
+
+```cypher
+MATCH (p:Pessoa {nome: "João"}), (l:Loja {nome: "Loja A"})
+CREATE (p)-[:É_CLIENTE_DE]->(l)
+```
+
+```cypher
+CREATE (p)-[:VISITOU]->(l)
+```
+> Temos dois relacionamentos distintos entre os mesmos nós: `É_CLIENTE_DE` e `VISITOU`. Porém, cada relacionamento é único e definido por um tipo de conexão.
+
 #### Caminhos
 Caminhos em um gráfico consistem em nós e relacionamentos conectados. 
 
