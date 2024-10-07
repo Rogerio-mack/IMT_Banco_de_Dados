@@ -6,7 +6,11 @@ Aqui você vai encontrar operações básicas de **C**reate, **R**ead, **U**pdat
 
 Cypher (veja a documentação [aqui](https://neo4j.com/docs/cypher-manual/current/introduction/cypher-overview/) é a linguagem de consulta de gráfico declarativa da Neo4j. Foi criada em 2011 por engenheiros da Neo4j como uma linguagem equivalente a SQL para bancos de dados de gráfico. Semelhante ao SQL, o Cypher permite que os usuários se concentrem no que recuperar do gráfico, em vez de como recuperá-lo. 
 
-O Cypher fornece uma maneira visual de combinar padrões e relacionamentos. Ele se baseia no seguinte tipo de sintaxe ascii-art: `(nodes)-[:CONNECT_TO]->(otherNodes)`. Colchetes arredondados são usados ​​para nós circulares e `-[:ARROWS]->` para relacionamentos. Escrever uma consulta é efetivamente como desenhar um padrão através dos dados no gráfico (será? rs). 
+O Cypher fornece uma maneira visual de combinar padrões e relacionamentos. Ele se baseia no seguinte tipo de sintaxe ascii-art: 
+
+`(nodes)-[:CONNECT_TO]->(otherNodes)`
+
+Colchetes arredondados são usados ​​para nós circulares e `-[:ARROWS]->` para relacionamentos. Escrever uma consulta é efetivamente como desenhar um padrão através dos dados no gráfico (será? rs). 
 
 ## Cypher $\times$ SQL
 
