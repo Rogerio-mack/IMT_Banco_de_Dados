@@ -80,7 +80,7 @@ Os nós em um gráfico podem ser conectados com relacionamentos. Um relacionamen
 
 ```cypher
 //
-// quantos amigos Anna conhecer desde antes de 2023?
+// quantos amigos a Anna conhece desde antes de 2023?
 //
 MATCH (:Person {name: 'Anna'})-[r:KNOWS WHERE r.since < 2023]->(friend:Person)
 RETURN count(r) As numberOfFriends
