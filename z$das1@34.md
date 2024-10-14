@@ -9,25 +9,28 @@ Para os artistas inclua nome, país e genêro, para ao menos um artista inclua n
 // limpando toda a base
 MATCH (n)
 DETACH DELETE n
+
 // criando nós de filmes
 CREATE (f1:Filme {nome:"Star Wars", ano_lançamento:1977,
 genero: "ficção", estudio :"Lucas Films"})
 RETURN f1
-// criando mais de um nó - podendo misturar nós de tipos
-// diferentes
+
+// criando mais de um nó, podendo misturar nós de tipos diferentes
 CREATE (filme2:Filme {nome:"O Poderoso Chefão I", ano_lançamento:1972,
 genero: "drama", estudio :"Paramount"}),
 (filme3:Filme {nome:"Central do Brasil", ano_lançamento:1990,
 genero: "drama", estudio :"VideoFilmes"}),
 (a1:Artista {nome:"Marlon Brando", pais:"EUA", sexo:"M"})
-RETURN filme2, filme3,a1
-// nós para artistas
+RETURN filme2, filme3, a1
+
+// criando nós para artistas
 CREATE (a1:Artista{nome:"Al Pacino", pais:"EUA", sexo:"M"}),
 (a2:Artista{nome:"Francis Ford Copolla", pais:"EUA", sexo:"M"}),
 (a3:Artista{nome:"Fernanda Montenegro", pais:"Brasil",
 sexo:"F", Nascimento: "1929-10-16T00:00:00.000Z"})
 RETURN a1, a2, a3
 ```
+
 ## Exercício 2. 
 Faça as seguintes consultas:
 
