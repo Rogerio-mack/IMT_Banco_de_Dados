@@ -62,5 +62,8 @@
 
 * [Introdução ao Neo4j](https://github.com/Rogerio-mack/IMT_Banco_de_Dados/blob/main/Lab10_neo4j.md)
 
+### Lab 11: Neo4J, Exercícios
 
+* [Exercício 1](https://github.com/Rogerio-mack/IMT_Banco_de_Dados/blob/main/Neo4J_ex1.md)
+* [Exercício 2](https://github.com/Rogerio-mack/IMT_Banco_de_Dados/blob/main/Neo4J_ex2.md)
 
