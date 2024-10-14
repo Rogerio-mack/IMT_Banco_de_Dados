@@ -32,10 +32,12 @@ MATCH (a:Artista),(f:Filme)
 WHERE a.nome = "Marlon Brando" AND f.nome = 'O Poderoso Chefão I'
 CREATE (f)-[e:Elenco {tipo_participação:"Ator", papel : "Vito Corleone"}]->(a)
 RETURN *
+
 // usando a outra sintaxe
 MATCH (a:Artista {nome : 'Al Pacino'}),(f:Filme {nome : 'O Poderoso Chefão I'})
 CREATE (f)-[e:Elenco {tipo_participação:"Ator", papel : "Michael Corleone"}]->(a)
 RETURN *
+
 // exibindo o elenco do filme
 MATCH (f:Filme)-[e:Elenco]->(a:Artista)
 WHERE f.nome =~ '(?i).*chefão I.*'
