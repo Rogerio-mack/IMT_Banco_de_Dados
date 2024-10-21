@@ -3,8 +3,8 @@ DETACH DELETE n
 
 // Criação dos nós com datas de nascimento
 CREATE 
-  (pessoa1:Pessoa {nome: 'João', nascimento: localdatetime("2015-07-21T21:40:32.142")}),
-  (pessoa2:Pessoa {nome: 'Maria', nascimento: nascimento: localdatetime("2012-10-21T21:40:32.142")});
+  (pessoa1:Pessoa {nome: 'João', nascimento: datetime('2000-01-15T12:00:00Z')}),
+  (pessoa2:Pessoa {nome: 'Maria', nascimento: datetime('1995-10-25T09:30:00Z')});
 
 // Seleciona nascido no mês 10
 MATCH (p:Pessoa)
