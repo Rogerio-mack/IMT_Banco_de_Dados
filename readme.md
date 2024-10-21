@@ -72,7 +72,8 @@
 ### Lab 12: Neo4J, Exercícios
 
 * [Atividade 4, para entrega](https://github.com/Rogerio-mack/IMT_Banco_de_Dados/blob/main/Neo4J_ATIVIDADE_4.md)
-* [dump Neo4J](https://drive.google.com/drive/folders/1cA-yNkwgr7ghfj2Smk4i4mtIF5_aUuJ7?usp=sharing)
+* [Exercício (LOAD Database)](https://github.com/Rogerio-mack/IMT_Banco_de_Dados/blob/main/Neo4J_load.md)
+>> [dump Neo4J](https://drive.google.com/drive/folders/1cA-yNkwgr7ghfj2Smk4i4mtIF5_aUuJ7?usp=sharing)
 
 
 
