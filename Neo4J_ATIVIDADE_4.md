@@ -3,9 +3,9 @@
 Empregue um dos bancos de dados já criados de filmes. Adicione, se necessário, filmes e outros elementos à base. Em seguida desenvolva os comandos em CYPHER para:
 
 a) Criar 4 nós para sessão de exibição com data, horário, legendado (sim ou não) e público
-pagante. A data é inserida desta forma: data_hora_sessao : "2024-10-12T16:00:00.000Z"
+pagante (número). A data é inserida desta forma: data_hora_sessao : "2024-10-12T16:00:00.000Z"
 
-b) Criar 2 nós para sala com nome, capacidade, tipo de áudio e vídeo
+b) Criar 2 nós para sala com nome, capacidade, tipo de áudio Digital (Dolby, DTS por exemplo) e vídeo (IMAX, 3D, D-Box) 
 
 c) Criar relacionamentos entre filme e sessão, sessão e sala (2 sessões para “Star Wars” e 2 para
 “O poderoso Chefão”)
