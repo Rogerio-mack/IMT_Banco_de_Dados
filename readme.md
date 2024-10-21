@@ -65,5 +65,7 @@
 ### Lab 11: Neo4J, Exercícios
 
 * [Exercício 1](https://github.com/Rogerio-mack/IMT_Banco_de_Dados/blob/main/Neo4J_ex1.md)
+| [Solução](https://github.com/Rogerio-mack/IMT_Banco_de_Dados/blob/main/Neo4J_ex1_solucao.md)
 * [Exercício 2](https://github.com/Rogerio-mack/IMT_Banco_de_Dados/blob/main/Neo4J_ex2.md)
+| [Solução](https://github.com/Rogerio-mack/IMT_Banco_de_Dados/blob/main/Neo4J_ex2_solucao.md)
 
