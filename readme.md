@@ -69,3 +69,10 @@
 * [Exercício 2](https://github.com/Rogerio-mack/IMT_Banco_de_Dados/blob/main/Neo4J_ex2.md)
 | [Solução](https://github.com/Rogerio-mack/IMT_Banco_de_Dados/blob/main/Neo4J_ex2_solucao.md)
 
+### Lab 12: Neo4J, Exercícios
+
+* [Atividade 4, para entrega](https://github.com/Rogerio-mack/IMT_Banco_de_Dados/blob/main/Neo4J_ATIVIDADE_4.md)
+* [dump Neo4J](https://drive.google.com/drive/folders/1cA-yNkwgr7ghfj2Smk4i4mtIF5_aUuJ7?usp=sharing)
+
+
+
