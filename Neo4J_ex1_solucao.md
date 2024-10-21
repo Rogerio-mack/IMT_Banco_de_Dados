@@ -20,7 +20,7 @@ CREATE (filme2:Filme {nome:"O Poderoso Chefão I", ano_lançamento:1972,
 genero: "drama", estudio :"Paramount"}),
 (filme3:Filme {nome:"Central do Brasil", ano_lançamento:1990,
 genero: "drama", estudio :"VideoFilmes"}),
-(a1:Artista {nome:"Marlon Brando", pais:"EUA", sexo:"M"})
+(a0:Artista {nome:"Marlon Brando", pais:"EUA", sexo:"M"})
 RETURN filme2, filme3, a1
 
 // criando nós para artistas
