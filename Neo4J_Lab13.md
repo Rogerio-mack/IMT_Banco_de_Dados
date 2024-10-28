@@ -47,6 +47,15 @@ Com `duration.between()`, calculamos a duração entre duas datas.
 RETURN duration.between(datetime("1974-12-20"), datetime("2024-10-27")) AS Duracao
 ```
 
+### 1.3 Conversão de Datas
+
+```cypher
+WITH date('2024-10-28') AS data
+RETURN 
+    toString(data) AS DataString,
+    date('2024-10-28') AS DataConvertida;
+```
+
 ---
 
 ## 2. Manipulação de Tipos e Funções de Grupo
@@ -54,7 +63,7 @@ RETURN duration.between(datetime("1974-12-20"), datetime("2024-10-27")) AS Durac
 ### 2.1 Conversão de Tipos
 
 
-**toInteger**. Para converter valores de atributos para tipos específicos, como `toInteger()`, facilitando cálculos e funções de grupo.
+**toInteger & toFloat**. Para converter valores de atributos para tipos específicos, como `toInteger()`, facilitando cálculos e funções de grupo.
 
 ```cypher
 // Convertendo altura dos artistas para tipo inteiro
@@ -64,6 +73,13 @@ RETURN a.nome, a.altura LIMIT 50
 ```
 
 Aqui você encontra também o comando **`LIMIT`**, que não havíamos empregado antes.
+
+```cypher
+WITH '123' AS stringInt, '123.45' AS stringFloat
+RETURN 
+    toInteger(stringInt) AS Inteiro,
+    toFloat(stringFloat) AS Decimal;
+```
 
 **toString**. Aqui como converter dados numéricos para string.
 
