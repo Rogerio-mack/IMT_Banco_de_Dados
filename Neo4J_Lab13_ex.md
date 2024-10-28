@@ -4,8 +4,8 @@ Para entrega, máximo 3 alunos por grupo e apenas um aluno deve postar. Estrutur
 
 ```
 // Identificação do grupo (mesmo que um único aluno)
-// \<Nome Completo\> RA:9999999-9
-// \<Nome Completo\> RA:9999999-9 
+// <Nome Completo> RA:9999999-9
+// <Nome Completo> RA:9999999-9 
 
 // Exercício 1
 ...
