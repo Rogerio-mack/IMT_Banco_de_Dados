@@ -152,6 +152,8 @@ RETURN f.pais AS Pais, f.generos AS Generos, COUNT(*) AS Contagem_Genero
 ORDER BY Contagem_Genero DESC
 ```
 
+> *Qual seria aqui a SQL equivalente?*
+
 ### 3.2 Artistas e Filmes Específicos
 
 Filtrar filmes e artistas por critérios, como gênero de filme e participação do artista.
@@ -189,6 +191,35 @@ Explorar as conexões entre artistas e filmes específicos para identificar cola
 MATCH (a1:Artista)<-[e1:Elenco]-(f:Filme)-[e2:Elenco]->(a2:Artista)
 WHERE a1.nome =~ '(?i).*robert.*' AND a1.nome =~ '(?i).*niro.*' AND a1 <> a2
 RETURN a2.nome AS CoAtor, f.titulo_original AS Filme
+```
+
+**'Quebrando' essa consulta,**
+
+> 1. Buscar todos os filmes em que um artista específico atuou:
+
+```cypher
+
+MATCH (a:Artista)-[e:Elenco]->(f:Filme)
+WHERE a.nome = 'Robert De Niro'
+RETURN f.titulo_original AS Filme;
+```
+
+> 2. Encontrar todos os coatores de um artista específico:
+
+```cypher
+
+MATCH (a1:Artista)<-[e:Elenco]-(f:Filme)-[e2:Elenco]->(a2:Artista)
+WHERE a1.nome = 'Robert De Niro' AND a1 <> a2
+RETURN DISTINCT a2.nome AS CoAtor;
+```
+
+> 3. Contar quantas vezes um artista atuou em filmes:
+
+```cypher
+
+MATCH (a:Artista)-[e:Elenco]->(f:Filme)
+WHERE a.nome = 'Robert De Niro'
+RETURN COUNT(f) AS NumeroDeFilmes;
 ```
 
 ---
