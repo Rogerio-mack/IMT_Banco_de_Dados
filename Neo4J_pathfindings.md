@@ -104,3 +104,61 @@ Saída:
 
 Isso mostraria todos os caminhos mais curtos que levam a Salvador.
 
+Claro! Vamos adaptar o exemplo da Árvore Geradora Mínima (MST) para o contexto de cidades brasileiras e suas distâncias aproximadas em quilômetros. Usaremos cidades como São Paulo, Rio de Janeiro, Belo Horizonte, Brasília e Salvador.
+
+## 3. Árvore Geradora Mínima (**MST, Minimum Spanning Tree**)
+
+```cypher
+// Criando cidades
+CREATE (sp:City {name: "São Paulo"})
+CREATE (rj:City {name: "Rio de Janeiro"})
+CREATE (bh:City {name: "Belo Horizonte"})
+CREATE (br:City {name: "Brasília"})
+CREATE (sv:City {name: "Salvador"})
+
+// Criando estradas com distâncias em quilômetros aproximados
+CREATE (sp)-[:CONNECTED {distance: 430}]->(rj)  // São Paulo a Rio de Janeiro
+CREATE (sp)-[:CONNECTED {distance: 586}]->(bh)  // São Paulo a Belo Horizonte
+CREATE (rj)-[:CONNECTED {distance: 360}]->(bh)  // Rio de Janeiro a Belo Horizonte
+CREATE (bh)-[:CONNECTED {distance: 715}]->(br)  // Belo Horizonte a Brasília
+CREATE (br)-[:CONNECTED {distance: 1_000}]->(sv) // Brasília a Salvador
+CREATE (bh)-[:CONNECTED {distance: 1_050}]->(sv) // Belo Horizonte a Salvador
+CREATE (sp)-[:CONNECTED {distance: 1_200}]->(br) // São Paulo a Brasília
+CREATE (rj)-[:CONNECTED {distance: 1_100}]->(sv); // Rio de Janeiro a Salvador
+```
+
+Se você tiver o APOC instalado, você pode usar a seguinte consulta para calcular a MST, usando o algoritmo de Prim:
+
+```cypher
+CALL apoc.algo.prim('City', 'CONNECTED', 'distance') YIELD path
+RETURN path;
+Saída Esperada
+```
+
+Ou pode usar a função nativa,
+
+```cypher
+CALL algo.minimumSpanningTree('City', 'CONNECTED', {property: 'distance'})
+YIELD nodes, relationships
+RETURN [node IN nodes | id(node)] AS nodeIds, size(relationships) AS relationshipCount;
+```
+
+A saída representará a árvore geradora mínima conectando todas as cidades com a menor soma total de distâncias. A tabela a seguir é um exemplo do que a saída poderia ser:
+
+
+| Path                                                | Total Distance |
+|-----------------------------------------------------|----------------|
+| São Paulo -> Rio de Janeiro (430)                  |
+| Rio de Janeiro -> Belo Horizonte (360)              |
+| Belo Horizonte -> Brasília (715)                    |
+| Brasília -> Salvador (1000)                         |
+| **Total**                                          | **2505**       |
+
+Neste exemplo, a MST conecta todas as cidades com a menor soma total de distâncias, que é 2505 km.
+
+A árvore geradora mínima é uma função útil e importante de grafos em muitos contextos, como:
+
+* Infraestrutura de Transporte: Planejamento de rodovias que conectam cidades com o menor custo de construção.
+* Rede de Comunicações: Conexões de fibras óticas ou cabos que interligam cidades minimizando o custo.
+* Design de Circuitos: Para otimizar a interconexão de componentes.
+
