@@ -92,6 +92,7 @@
 <br>
 
 * [Dates, Conversão de tipos, Agrupamentos e Relações](https://github.com/Rogerio-mack/IMT_Banco_de_Dados/blob/main/Neo4J_Lab13.md)
+* [Listas/Arrays](https://github.com/Rogerio-mack/IMT_Banco_de_Dados/blob/main/Neo4J_arrays.md)
 * [Atividade 5, para entrega](https://github.com/Rogerio-mack/IMT_Banco_de_Dados/blob/main/Neo4J_Lab13_ex.md)
 
 
