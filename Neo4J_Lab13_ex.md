@@ -16,6 +16,10 @@ Para entrega, máximo 3 alunos por grupo e apenas um aluno deve postar. Estrutur
 
 Outros formatos o `corretor` irá desconsiderar.
 
+Desenvolva os scripts abaixo com base na base de dados [(Filmes Atores, Dump)](https://drive.google.com/drive/folders/1cA-yNkwgr7ghfj2Smk4i4mtIF5_aUuJ7?usp=sharing).
+
+> [Base alternativa](https://github.com/Rogerio-mack/IMT_Banco_de_Dados/blob/main/Neo4J_filmes_atores_short.js)... *somente se dump failed (sua máquina de casa por exemplo)*.
+
 
 ## Exercício 1
 
