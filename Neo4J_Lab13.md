@@ -55,6 +55,23 @@ RETURN
     toString(data) AS DataString,
     date('2024-10-28') AS DataConvertida;
 ```
+### 1.4 Outros formatos de Datas
+
+Em geral, a configuração do Neo4J trabalha com o formato DD-MM-YYYY. Se tiver outros formatos de data você pode fazer conversões como abaixo.
+
+```cypher
+// Convertendo DD/MM/YYYY para DATE
+WITH '28/10/2024' AS dataString1
+RETURN date(substring(dataString1, 6, 4) + '-' + substring(dataString1, 3, 2) + '-' + substring(dataString1, 0, 2)) AS Data1;
+
+// Convertendo DD/MM/YY para DATE
+WITH '28/10/24' AS dataString2
+RETURN date('20' + substring(dataString2, 6, 2) + '-' + substring(dataString2, 3, 2) + '-' + substring(dataString2, 0, 2)) AS Data2;
+
+// Usando YYYY-MM-DD diretamente
+WITH '2024-10-28' AS dataString3
+RETURN date(dataString3) AS Data3;
+```
 
 ---
 
