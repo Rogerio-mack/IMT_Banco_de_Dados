@@ -88,6 +88,14 @@ WHERE a.altura IS NOT NULL
 RETURN COUNT(a) AS Contagem, AVG(a.altura) AS Media_Altura, MAX(a.altura) AS Maior_Altura, MIN(a.altura) AS Menor_Altura
 ```
 
+Note que isso é o equivalente da SQL:
+
+```
+SELECT AVG(a.altura) AS Media_altura, ...
+FROM artista a
+```
+
+
 ### 2.3 Agrupamento por Atributos
 
 Podemos agrupar os dados para calcular estatísticas por categorias.
@@ -100,15 +108,16 @@ RETURN a.local_nascto, COUNT(*) AS Contagem, AVG(a.altura) AS Media_Altura, MAX(
 ORDER BY Contagem DESC
 ```
 
+Note que isso é o equivalente da SQL:
+
+```
+SELECT a.local_nascto, A COUNT(*) AS Contagem, ...,
+FROM artista a
+GROUP BY a.local_nascto
+ORDER BY Contagem DESC
+```
+
 Note aqui mais um comando que não empregamos antes **`ORDER BY Contagem DESC`**. 
-
-
-Note ainda, que isso é muito equivalente a instruções SQL do tipo:
-
-```
-SELECT AVG(a.altura) AS Media_altura FROM artista a
-```
-
 
 ---
 
