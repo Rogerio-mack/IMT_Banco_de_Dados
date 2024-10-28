@@ -90,11 +90,12 @@ RETURN COUNT(a) AS Contagem, AVG(a.altura) AS Media_Altura, MAX(a.altura) AS Mai
 
 Note que isso é o equivalente da SQL:
 
-```
+```SQL
 SELECT AVG(a.altura) AS Media_altura, ...
 FROM artista a
 ```
 
+---
 
 ### 2.3 Agrupamento por Atributos
 
@@ -110,7 +111,7 @@ ORDER BY Contagem DESC
 
 Note que isso é o equivalente da SQL:
 
-```
+```SQL
 SELECT a.local_nascto, A COUNT(*) AS Contagem, ...,
 FROM artista a
 GROUP BY a.local_nascto
@@ -118,6 +119,22 @@ ORDER BY Contagem DESC
 ```
 
 Note aqui mais um comando que não empregamos antes **`ORDER BY Contagem DESC`**. 
+
+**Aqui mais um exemplo de "GROUP BY",**
+
+```cypher
+MATCH (p:Pessoa)
+RETURN p.idade AS Idade, count(p) AS Total
+ORDER BY p.idade
+```
+
+Em SQL,
+
+```SQL
+SELECT p.idade AS Idade, COUNT(*) AS Total
+FROM Pessoa p
+GROUP BY p.idade;
+```
 
 ---
 
