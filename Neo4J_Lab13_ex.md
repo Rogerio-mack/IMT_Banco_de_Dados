@@ -43,7 +43,7 @@ Para cada artista, mostre o número de vezes em que atuou em um filme. Considere
 
 ## Exercício 6
 
-Exiba o número de atuações de atrizes em filmes de **"Drama"**. Considere apenas participações marcadas como “Actress”. Ordene os resultados pela quantidade de atuações em ordem decrescente.
+Exiba o número de atuações de atrizes em filmes de **"Ficção Científica"**. Considere apenas participações marcadas como “Actress”. Ordene os resultados pela quantidade de atuações em ordem decrescente.
 
 ## Exercício 7
 
