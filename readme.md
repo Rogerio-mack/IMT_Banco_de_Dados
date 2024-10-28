@@ -85,7 +85,11 @@
 > * [Book, *Graph Databases For Dummies*](https://github.com/Rogerio-mack/IMT_Banco_de_Dados/blob/main/Graph-Databases-For-Dummies.pdf)
 > * [Book, *Neo4j Graph Algorithms*](https://github.com/Rogerio-mack/IMT_Banco_de_Dados/blob/main/Neo4j_Graph_Algorithms_r3.pdf)
 
-> <img src="https://github.com/Rogerio-mack/IMT_Banco_de_Dados/blob/main/Neo4j_Graph_Algorithms_r3.png?raw=true" width="260">
+<br>
+
+>> <img src="https://github.com/Rogerio-mack/IMT_Banco_de_Dados/blob/main/Neo4j_Graph_Algorithms_r3.png?raw=true" width="200">
+
+<br>
 
 * [Dates, Conversão de tipos, Agrupamentos e Relações](https://github.com/Rogerio-mack/IMT_Banco_de_Dados/blob/main/Neo4J_Lab13.md)
 * [Atividade 5, para entrega](https://github.com/Rogerio-mack/IMT_Banco_de_Dados/blob/main/Neo4J_Lab13_ex.md)
