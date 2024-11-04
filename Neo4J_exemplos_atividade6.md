@@ -57,7 +57,7 @@ Busca pares de atores (`a1` e `a2`) que participaram do mesmo filme (`f`), onde 
 
 ```cypher
 MATCH (a1)<-[e1:Elenco]-(f)-[e2:Elenco]->(a2)
-WHERE a1.nome =~ '(?i).*paulo.*' AND a1.nome =~ '(?i).*gustavo.*'
+WHERE a1.nome = '(?i).*paulo.*' AND a1.nome = '(?i).*gustavo.*'
 AND a1 <> a2
 RETURN a2.nome AS Trabalhou_junto, COUNT(e2) AS Qtas_vezes
 ORDER BY Qtas_vezes DESC
