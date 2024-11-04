@@ -79,7 +79,7 @@ RETURN *
 
 Esta consulta é complexa e possivelmente ineficiente em grandes datasets. Ela busca atores que trabalharam com atores que trabalharam com Paulo Gustavo, mas que *não* trabalharam diretamente com ele. A lógica pode estar incompleta ou incorreta, retornando resultados inesperados. Uma revisão da lógica é necessária.
 
-### **4. Amigos que levam a Fabio Porchat:**
+### **4. Amigos que levam a Fabio Porchat.**
 
 ```cypher
 MATCH (a1)<-[e1:Elenco]-(f1)-[e2:Elenco]->(a2),
@@ -93,7 +93,37 @@ ORDER BY  Força_Relacionamento DESC
 
 Busca atores (`a2`) que trabalharam com Paulo Gustavo (`a1`) e também com Fabio Porchat (`a3`), identificando atores que conectam os dois. `COUNT(*)` conta quantas vezes cada `a2` aparece, indicando a força do relacionamento entre os dois atores.
 
-### **5. Qual o caminho para Robert De Niro chegar ao diretor Quentin Tarantino?**
+### **5. Quem ainda não trabalhou com Wagner Moura?**
+
+```cypher
+MATCH (a1)<-[e1:Elenco]-(f1)-[e2:Elenco]->(a2),
+(a2)<-[e3:Elenco]-(f2)-[e4:Elenco]->(a3)
+WHERE a1.nome =~ '(?i).*wagner moura.*' 
+AND a1 <> a2 AND a2 <> a3
+AND NOT (a1)<-[e1:Elenco]-(f1)-[e2:Elenco]->(a3)
+RETURN a2.nome AS TRabalhou, a3.nome AS Ainda_não_trabalhou
+ORDER BY Ainda_não_trabalhou
+```
+
+Esta consulta identifica artistas que ainda não trabalharam diretamente com Wagner Moura, mas têm conexões de segundo grau através de outros artistas. 
+O resultado mostra quem trabalhou com Wagner Moura (a2) e quem ainda não trabalhou (a3), ordenado pelo nome dos artistas que ainda não trabalharam.
+
+### **6. Caminho com MAIS FORÇA para chegar em Fernanda Montenegro?**
+
+```cypher
+MATCH (a1)<-[e1:Elenco]-(f1)-[e2:Elenco]->(a2),
+(a2)<-[e3:Elenco]-(f2)-[e4:Elenco]->(a3)
+WHERE a1.nome =~ '(?i).*wagner moura.*' 
+AND a3.nome =~ '(?i).*fernanda montenegro.*'
+AND a1 <> a2 AND a2 <> a3
+AND NOT (a1)<-[e1:Elenco]-(f1)-[e2:Elenco]->(a3)
+RETURN a2.nome AS TRabalhou, COUNT(*) AS Força
+ORDER BY Força DESC
+```
+
+Esta consulta busca o caminho mais forte entre Wagner Moura e Fernanda Montenegro através de um artista intermediário. A "força" do caminho é determinada pelo número de conexões entre os artistas. O resultado é ordenado pela força do relacionamento em ordem decrescente.
+
+### **7. Qual o caminho para Robert De Niro chegar ao diretor Quentin Tarantino?**
 
 ```cypher
 MATCH (a1:Artista)<-[e1:Elenco]-(f1:Filme)-[e2:Elenco]->(a2:Artista)<-[e3:Elenco]-(f2:Filme)-[e4:Elenco]->(a3:Artista)
@@ -109,5 +139,10 @@ ORDER BY Força DESC
 ```
 
 Uma consulta mais sofisticada para encontrar caminhos entre Robert De Niro e Quentin Tarantino.  Busca atores (`a2`) que trabalharam com De Niro e também em filmes dirigidos por Tarantino, filtrando por tipo de participação. `COUNT(e4)` conta a força da conexão.
+
+1. De Niro como ator em um filme (e1)
+2. Um ator intermediário que trabalhou com De Niro (e2)
+3. Esse mesmo ator intermediário em um filme dirigido por Tarantino (e3)
+4. Tarantino como diretor desse filme (e4)
 
 
