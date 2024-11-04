@@ -1,9 +1,8 @@
 # Neo4J, Consultas para Recomendação
 
-## Base de Dados
+## Esquema geral da base de dados dos exemplos
 
-Modelo de dados de filmes, atores/atrizes e diretores empregado.  
-A relação central é `Elenco`, conectando `Artista` e `Filme`, em que a propriedade `tipo_participação`  especifica o papel do artista (ator, diretor, etc.).
+É o modelo de dados de filmes, atores/atrizes e diretores imdb.  A relação central é `Elenco`, conectando `Artista` e `Filme`, em que a propriedade `tipo_participação`  especifica o papel do artista (ator, diretor, etc.).
 
 * **Nós:**
     * `Artista`:  `{nome: 'Nome do Artista'}`
