@@ -120,6 +120,7 @@ MATCH (a:Artista {nome: "Julia Roberts"}) RETURN a.name, toInteger(substring(a.d
 "a.name"│"toInteger(substring(a.dt_nascto,0,4))"│
 ╞════════╪═══════════════════════════════════════╡
 │null    │1967                                   │
+```
 
 > * Solução exercício 4:
 
