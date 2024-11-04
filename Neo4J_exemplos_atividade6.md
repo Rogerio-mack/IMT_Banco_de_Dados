@@ -66,7 +66,7 @@ ORDER BY Qtas_vezes DESC
 Similar à consulta anterior, mas agrupa os resultados por ator (`a2.nome`) e conta quantas vezes (`COUNT(e2)`) cada um participou de um filme com Paulo Gustavo.
 
 
-### **3. Encontre atores que não trabalharam com o ator Paulo Gustavo. 
+### **3. Encontre atores que não trabalharam com o ator Paulo Gustavo.** 
 
 ```cypher
 MATCH (a:Person), (b:Person)
