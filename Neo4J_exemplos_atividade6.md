@@ -47,7 +47,7 @@
 
 ```cypher
 MATCH (a1)<-[e1:Elenco]-(f)-[e2:Elenco]->(a2)
-WHERE a1.nome =~ '(?i).*paulo.*' AND a1.nome =~ '(?i).*gustavo.*'
+WHERE a1.nome = '(?i).*paulo.*' AND a1.nome = '(?i).*gustavo.*'
 AND a1 <> a2
 RETURN *
 ```
