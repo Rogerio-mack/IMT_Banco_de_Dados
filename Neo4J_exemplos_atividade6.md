@@ -66,13 +66,13 @@ ORDER BY Qtas_vezes DESC
 Similar à consulta anterior, mas agrupa os resultados por ator (`a2.nome`) e conta quantas vezes (`COUNT(e2)`) cada um participou de um filme com Paulo Gustavo.
 
 
-### **3. Encontre atores que não trabalharam com o ator Paulo Gustavo. `NOT EXISTS`**
+### **3. Encontre atores que não trabalharam com o ator Paulo Gustavo. 
 
 ```cypher
-MATCH (a:Artista)
-WHERE NOT EXISTS((a)-[:Elenco]->(:Filme)<-[:Elenco]-(paulogustavo:Artista {nome:"Paulo Gustavo"}))
-// AND a.tipo_participação = "ator" // aqui apenas a título de exemplo. Algo assim pode ser usado caso queira especificar o tipo de trabalho conjunto (ator, diretor etc.)
-RETURN a.nome
+MATCH (a:Person), (b:Person)
+WHERE NOT (a)-[:ACTED_IN]->(:Movie)<-[:ACTED_IN]-(b)
+AND b.name = "Paulo Gustavo"
+RETURN a.name
 ```
 
 ### **4. Encontre atores que trabalharam com atores que trabalharam com Paulo Gustavo, mas que *não* trabalharam diretamente com ele.**
