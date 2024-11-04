@@ -102,4 +102,6 @@
 
 <img src="https://github.com/Rogerio-mack/IMT_Banco_de_Dados/blob/main/Figuras/kevin.png?raw=true" width="360">
 
+* [Atividade 6, para entrega](https://github.com/Rogerio-mack/IMT_Banco_de_Dados/blob/main/Neo4J_atividade6.md)
+
 
