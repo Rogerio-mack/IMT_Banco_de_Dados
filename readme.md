@@ -108,7 +108,7 @@
 
 > Parecem existirem dados de atores/atrizes com datas de nascimento inválidas. Aqui uma possível solução, aprendendo de quebra como empregar `substring()`:
 
-> * Empregando `substring()`:
+> Empregando `substring()`:
 
 ```cypher
 MATCH (a:Artista {nome: "Julia Roberts"}) RETURN a.name, toInteger(substring(a.dt_nascto,0,4));
@@ -122,7 +122,7 @@ MATCH (a:Artista {nome: "Julia Roberts"}) RETURN a.name, toInteger(substring(a.d
 │null    │1967                                   │
 ```
 
-> * Solução exercício 4:
+> Solução exercício 4:
 
 ```cypher
 MATCH (a:Artista {nome: "Julia Roberts"})<-[e1:Elenco]->(f:Filme)-[e2:Elenco]->(b:Artista)
