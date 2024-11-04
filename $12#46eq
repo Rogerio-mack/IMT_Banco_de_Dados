@@ -1,0 +1,49 @@
+# Neo4J, Atividade 6 
+
+### **Exercício 1: Atores que trabalharam diretamente com Fernanda Montenegro (exceto em drama e romance)**
+
+```cypher
+MATCH (fernanda:Artista {nome: "Fernanda Montenegro"})-[r:Elenco]->(filme:Filme)-[r2:Elenco]->(ator:Artista)
+WHERE NOT filme.genero IN ["drama", "romance"] AND fernanda <> ator
+RETURN ator.nome
+```
+
+### **Exercício 2: Atores que *não* trabalharam diretamente com Fernanda Montenegro, com maior força de conexão.**
+
+```cypher
+MATCH p = shortestPath((fernanda:Artista {nome: "Fernanda Montenegro"})-[*..2]->(ator:Artista))
+WHERE NOT (fernanda)-[:Elenco]->()-[:Elenco]->(ator)
+RETURN ator.nome, length(p) AS força_conexão
+ORDER BY força_conexão ASC
+```
+Esta consulta busca os caminhos mais curtos entre Fernanda Montenegro e outros atores, excluindo os que trabalharam diretamente com ela.  `length(p)` representa a distância (força de conexão).  Caminhos mais curtos indicam conexões mais fortes.  Ajuste `[*..2]` se necessário para controlar o comprimento máximo do caminho.
+
+### **Exercício 3: Artistas de filmes brasileiros de comédia que não trabalharam com Renato Aragão.**
+
+```cypher
+MATCH (artista:Artista)-[r:Elenco]->(filme:Filme)
+WHERE filme.nacionalidade = "brasileira" AND filme.genero = "comédia"
+AND NOT (artista)-[:Elenco]->()-[:Elenco]->(:Artista {nome: "Renato Aragão"})
+RETURN artista.nome
+```
+
+### **Exercício 4: Atores/atrizes com idade > 40 que mais trabalharam em filmes de romance com Julia Roberts.**
+
+```cypher
+MATCH (julia:Artista {nome: "Julia Roberts"})-[r1:Elenco]->(filme:Filme)-[r2:Elenco]->(ator:Artista)
+WHERE filme.genero = "romance" AND ator.idade > 40
+RETURN ator.nome, COUNT(*) AS numero_filmes
+ORDER BY numero_filmes DESC
+```
+
+### **Exercício 5: Diretores que dirigiram atores comuns a Glauber Rocha, em filmes de gêneros diferentes.**
+
+```cypher
+MATCH (glauber:Artista {nome: "Glauber Rocha"})-[r1:Elenco]->(filme1:Filme)-[r2:Elenco]->(ator:Artista),
+(diretor:Artista)-[r3:Elenco]->(filme2:Filme)-[r4:Elenco]->(ator)
+WHERE r1.tipo_participação = "diretor" AND r3.tipo_participação = "diretor" AND glauber <> diretor
+AND filme1.genero <> filme2.genero
+RETURN DISTINCT diretor.nome
+```
+
+* A eficiência dessas consultas pode ser aprimorada com índices apropriados nas propriedades relevantes (e.g., `nome`, `genero`, `idade`, `tipo_participação`).
