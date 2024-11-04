@@ -104,4 +104,29 @@
 
 * [Atividade 6, para entrega](https://github.com/Rogerio-mack/IMT_Banco_de_Dados/blob/main/Neo4J_atividade6.md)
 
+#### Exercício 4 (Solução)
 
+> Parecem existirem dados de atores/atrizes com datas de nascimento inválidas. Aqui uma possível solução, aprendendo de quebra como empregar `substring()`:
+
+> * Empregando `substring()`:
+
+```cypher
+MATCH (a:Artista {nome: "Julia Roberts"}) RETURN a.name, toInteger(substring(a.dt_nascto,0,4));
+```
+
+> Saída:
+
+```
+"a.name"│"toInteger(substring(a.dt_nascto,0,4))"│
+╞════════╪═══════════════════════════════════════╡
+│null    │1967                                   │
+
+> * Solução exercício 4:
+
+```cypher
+MATCH (a:Artista {nome: "Julia Roberts"})<-[e1:Elenco]->(f:Filme)-[e2:Elenco]->(b:Artista)
+WHERE f.generos =~ '(?i).*roman.*' 
+AND datetime().year - toInteger(substring(a.dt_nascto,0,4)) > 40    
+RETURN b.nome AS Nome_Ator, COUNT(e2) AS Quantidade_Colaboracoes
+ORDER BY Quantidade_Colaboracoes DESC
+```
