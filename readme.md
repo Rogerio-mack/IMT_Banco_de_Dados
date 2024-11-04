@@ -95,4 +95,10 @@
 * [Listas/Arrays](https://github.com/Rogerio-mack/IMT_Banco_de_Dados/blob/main/Neo4J_arrays.md)
 * [Atividade 5, para entrega](https://github.com/Rogerio-mack/IMT_Banco_de_Dados/blob/main/Neo4J_Lab13_ex.md)
 
+### Lab 14: Neo4J, Exercícios, *Sistemas de Recomendação*
+
+* [Atividade 6, exemplos](https://github.com/Rogerio-mack/IMT_Banco_de_Dados/blob/main/Neo4J_exemplos_atividade6.md)
+
+<img src="https://github.com/Rogerio-mack/IMT_Banco_de_Dados/blob/main/Figuras/kevin.png?raw=true" width="360">
+
 
