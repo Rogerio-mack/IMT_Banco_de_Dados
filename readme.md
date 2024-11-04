@@ -127,7 +127,7 @@ MATCH (a:Artista {nome: "Julia Roberts"}) RETURN a.name, toInteger(substring(a.d
 ```cypher
 MATCH (a:Artista {nome: "Julia Roberts"})<-[e1:Elenco]->(f:Filme)-[e2:Elenco]->(b:Artista)
 WHERE f.generos =~ '(?i).*roman.*' 
-AND datetime().year - toInteger(substring(a.dt_nascto,0,4)) > 40    
+AND datetime().year - toInteger(substring(b.dt_nascto,0,4)) > 40    
 RETURN b.nome AS Nome_Ator, COUNT(e2) AS Quantidade_Colaboracoes
 ORDER BY Quantidade_Colaboracoes DESC
 ```
