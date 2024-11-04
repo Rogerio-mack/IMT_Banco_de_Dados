@@ -66,7 +66,17 @@ ORDER BY Qtas_vezes DESC
 
 Similar à consulta anterior, mas agrupa os resultados por ator (`a2.nome`) e conta quantas vezes (`COUNT(e2)`) cada um participou de um filme com Paulo Gustavo.
 
-### **3. Quem ainda não trabalhou com Paulo Gustavo?**
+
+### **3. Encontre atores que não trabalharam com o ator Paulo Gustavo. `NOT EXISTS`**
+
+```cypher
+MATCH (a:Artista)
+WHERE NOT EXISTS((a)-[:Elenco]->(:Filme)<-[:Elenco]-(paulogustavo:Artista {nome:"Paulo Gustavo"}))
+// AND a.tipo_participação = "ator" // aqui apenas a título de exemplo. Algo assim pode ser usado caso queira especificar o tipo de trabalho conjunto (ator, diretor etc.)
+RETURN a.nome
+```
+
+### **4. Encontre atores que trabalharam com atores que trabalharam com Paulo Gustavo, mas que *não* trabalharam diretamente com ele.**
 
 ```cypher
 MATCH (a1)<-[e1:Elenco]-(f1)-[e2:Elenco]->(a2),
@@ -75,11 +85,16 @@ WHERE a1.nome =~ '(?i).*paulo gustavo.*'
 AND a1 <> a2 AND a2 <> a3
 AND NOT (a1)<-[e1:Elenco]-(f1)-[e2:Elenco]->(a3)
 RETURN *
+// a2.nome AS Trabalhou, a3.nome AS Ainda_não_trabalhou
 ```
 
-Esta consulta é complexa e possivelmente ineficiente em grandes datasets. Ela busca atores que trabalharam com atores que trabalharam com Paulo Gustavo, mas que *não* trabalharam diretamente com ele. A lógica pode estar incompleta ou incorreta, retornando resultados inesperados. Uma revisão da lógica é necessária.
+* `a2`, trabalhou com `a1`
+* `a3`, trabalhou com `a2`
+* Mas, `a3`, não trabalhou com `a1`
 
-### **4. Amigos que levam a Fabio Porchat.**
+Esta consulta é complexa e possivelmente ineficiente em grandes datasets. Ela busca atores que trabalharam com atores que trabalharam com Paulo Gustavo, mas que *não* trabalharam diretamente com ele. 
+
+### **5. "Amigos" de Paulo Gustavo que levam a Fabio Porchat.**
 
 ```cypher
 MATCH (a1)<-[e1:Elenco]-(f1)-[e2:Elenco]->(a2),
@@ -91,24 +106,9 @@ RETURN a2.nome AS Trabalhou, COUNT(*) AS Força_Relacionamento
 ORDER BY  Força_Relacionamento DESC
 ```
 
-Busca atores (`a2`) que trabalharam com Paulo Gustavo (`a1`) e também com Fabio Porchat (`a3`), identificando atores que conectam os dois. `COUNT(*)` conta quantas vezes cada `a2` aparece, indicando a força do relacionamento entre os dois atores.
+"Amigos", aqui, são atores que trabalharam com Paulo Gustavo. Busca atores (`a2`) que trabalharam com Paulo Gustavo (`a1`) e também com Fabio Porchat (`a3`), identificando atores que conectam os dois. `COUNT(*)` conta quantas vezes cada `a2` aparece, indicando a **Força do Relacionamento** entre os dois atores, dada pelo número de arestas.
 
-### **5. Quem ainda não trabalhou com Wagner Moura?**
-
-```cypher
-MATCH (a1)<-[e1:Elenco]-(f1)-[e2:Elenco]->(a2),
-(a2)<-[e3:Elenco]-(f2)-[e4:Elenco]->(a3)
-WHERE a1.nome =~ '(?i).*wagner moura.*' 
-AND a1 <> a2 AND a2 <> a3
-AND NOT (a1)<-[e1:Elenco]-(f1)-[e2:Elenco]->(a3)
-RETURN a2.nome AS TRabalhou, a3.nome AS Ainda_não_trabalhou
-ORDER BY Ainda_não_trabalhou
-```
-
-Esta consulta identifica artistas que ainda não trabalharam diretamente com Wagner Moura, mas têm conexões de segundo grau através de outros artistas. 
-O resultado mostra quem trabalhou com Wagner Moura (a2) e quem ainda não trabalhou (a3), ordenado pelo nome dos artistas que ainda não trabalharam.
-
-### **6. Caminho com MAIS FORÇA para chegar em Fernanda Montenegro?**
+### **6. Caminho com MAIS FORÇA para chegar de Wagner Moura em Fernanda Montenegro?**
 
 ```cypher
 MATCH (a1)<-[e1:Elenco]-(f1)-[e2:Elenco]->(a2),
@@ -117,7 +117,7 @@ WHERE a1.nome =~ '(?i).*wagner moura.*'
 AND a3.nome =~ '(?i).*fernanda montenegro.*'
 AND a1 <> a2 AND a2 <> a3
 AND NOT (a1)<-[e1:Elenco]-(f1)-[e2:Elenco]->(a3)
-RETURN a2.nome AS TRabalhou, COUNT(*) AS Força
+RETURN a2.nome AS Trabalhou, COUNT(*) AS Força
 ORDER BY Força DESC
 ```
 
@@ -127,13 +127,13 @@ Esta consulta busca o caminho mais forte entre Wagner Moura e Fernanda Montenegr
 
 ```cypher
 MATCH (a1:Artista)<-[e1:Elenco]-(f1:Filme)-[e2:Elenco]->(a2:Artista)<-[e3:Elenco]-(f2:Filme)-[e4:Elenco]->(a3:Artista)
-WHERE a2 <> a3
-AND a1.nome =~ '(?i).*robert de niro.*' // origem
-AND a3.nome =~ '(?i).*tarantino.*' // destino
+WHERE a2 <> a3                              // por que não precisamos de a1 <> a2 aqui???
+AND a1.nome =~ '(?i).*robert de niro.*'     // origem  
+AND a3.nome =~ '(?i).*tarantino.*'          // destino
 AND e2.tipo_participação =~ '(?i).*act.*'
 AND e3.tipo_participação =~ '(?i).*act.*'
 AND e4.tipo_participação =~ '(?i).*dir.*'
-AND NOT (a1)<-[:Elenco]-(:Filme)-[:Elenco]->(a3)
+AND NOT (a1)<-[:Elenco]-(:Filme)-[:Elenco]->(a3) // aqui, exclui-se o caminho direto!
 RETURN a2.nome, a3.nome AS Recomendado, COUNT(e4) AS Força
 ORDER BY Força DESC
 ```
@@ -144,5 +144,6 @@ Uma consulta mais sofisticada para encontrar caminhos entre Robert De Niro e Que
 2. Um ator intermediário que trabalhou com De Niro (e2)
 3. Esse mesmo ator intermediário em um filme dirigido por Tarantino (e3)
 4. Tarantino como diretor desse filme (e4)
+
 
 
