@@ -1,4 +1,4 @@
-# Neo$J, Centralidade e Detecção de Comunidades em Grafos
+# Neo4J, Centralidade e Detecção de Comunidades em Grafos
 
 ## 1. Centralidade com Cidades Brasileiras
 
