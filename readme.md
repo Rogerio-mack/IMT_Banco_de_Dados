@@ -131,3 +131,15 @@ AND datetime().year - toInteger(substring(b.dt_nascto,0,4)) > 40
 RETURN b.nome AS Nome_Ator, COUNT(e2) AS Quantidade_Colaboracoes
 ORDER BY Quantidade_Colaboracoes DESC
 ```
+
+### Lab 15: Neo4J, *Revisão*
+
+* **Simulado** Neo4J para prova, no [Canvas](https://imt.instructure.com)
+
+* [Atividade 6, solução prof. Guardado](https://github.com/Rogerio-mack/IMT_Banco_de_Dados/blob/main/Neo4J_atividade6_solucao.md)
+
+#### Materiais complementares ( não caem na prova... ;-) )
+
+* [Neo4J, Centralidade e Detecção de Comunidades em Grafos](https://github.com/Rogerio-mack/IMT_Banco_de_Dados/blob/main/Neo4J_centrality.md)
+* [Neo4J, Pathfindinds Algorithms](https://github.com/Rogerio-mack/IMT_Banco_de_Dados/blob/main/Neo4J_pathfindings.md)
+  
