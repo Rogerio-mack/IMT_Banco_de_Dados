@@ -102,6 +102,8 @@ RETURN a3.nome AS Não_Trabalhou, COUNT(a3) AS Força
 ORDER BY Força DESC
 ```
 
+> **Essa é uma consulta muito ineficiente que pode demorar muito, ou nem concluir...**
+
 ## Exercício 3.
 Mostre todos os artistas de filmes de comédia que não trabalharam com Renato Aragão (ator/atriz/diretor, etc.).
 
@@ -163,6 +165,54 @@ WHERE Idade > 40
 RETURN outro , COUNT(*) AS Qtde_Vezes
 ORDER BY Qtde_Vezes DESC LIMIT 5
 ```
+
+> O `a2.dt_nascto =~ '.*-.*'` permite consistir a data de nascimento e evita dados com datas inválidas. Postei no GitHub uma solução que trata as datas inválidas.
+
+> `WITH`, define um `pipe` e quais dados são passados para *frente* no processamento da query. 
+
+> Veja aqui algumas variantes desse tipo de consulta.
+
+```cypher
+MATCH (a1)<-[e1:Elenco]-(f)-[e2:Elenco]->(a2)
+WHERE e2.tipo_participação =~ '(?i).*act.*'
+AND a1.nome =~ '(?i).*julia roberts.*'
+AND NOT f.generos =~ '(?i).*drama.*'
+AND a2.dt_nascto IS NOT NULL 
+AND a2.dt_obito IS NULL
+AND duration.between(date(a2.dt_nascto),date()).years > 40
+RETURN a2, COUNT(*) AS Qtde_Vezes
+ORDER BY Qtde_Vezes DESC LIMIT 5
+```
+> Veja aqui o uso no "`NOT LIKE`", `NOT f.generos =~ '(?i).*drama.*'`, e não `f.generos !=~ '(?i).*drama.*'` ou `NOT f.generos <>~ '(?i).*drama.*'`. A consulta acima é mais simples. 
+
+```cypher
+MATCH (a1)<-[e1:Elenco]-(f)-[e2:Elenco]->(a2)
+WHERE e2.tipo_participação =~ '(?i).*act.*'
+AND a1.nome =~ '(?i).*julia roberts.*'
+AND NOT f.generos =~ '(?i).*drama.*'
+AND a2.dt_nascto IS NOT NULL 
+AND a2.dt_obito IS NULL
+AND duration.between(date(a2.dt_nascto),date()).years > 40
+WITH a2.nome AS nome, duration.between(date(a2.dt_nascto),date()).years AS nasc 
+RETURN nome, nasc, COUNT(*) AS Qtde_Vezes
+ORDER BY Qtde_Vezes DESC LIMIT 5
+
+╒══════════════════════╤══════╤════════════╕
+│"nome"                │"nasc"│"Qtde_Vezes"│
+╞══════════════════════╪══════╪════════════╡
+│"Brad Pitt"           │60    │3           │
+├──────────────────────┼──────┼────────────┤
+│"George Clooney"      │63    │3           │
+├──────────────────────┼──────┼────────────┤
+│"Catherine Zeta-Jones"│55    │2           │
+├──────────────────────┼──────┼────────────┤
+│"Richard Gere"        │75    │2           │
+├──────────────────────┼──────┼────────────┤
+│"Paul Giamatti"       │57    │2           │
+└──────────────────────┴──────┴────────────┘
+```
+
+> Veja aqui o uso do WITH. Tente variações e veja que não são passados outros valores que não os do `WITH` na sequencia da consulta.
 
 ## Exercício 5.
 Mostre os diretores que dirigiram atores comuns ao diretor Glauber Rocha mas em gêneros diferentes
