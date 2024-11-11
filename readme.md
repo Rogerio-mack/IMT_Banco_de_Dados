@@ -142,4 +142,9 @@ ORDER BY Quantidade_Colaboracoes DESC
 
 * [Neo4J, Centralidade e Detecção de Comunidades em Grafos](https://github.com/Rogerio-mack/IMT_Banco_de_Dados/blob/main/Neo4J_centrality.md)
 * [Neo4J, Pathfindinds Algorithms](https://github.com/Rogerio-mack/IMT_Banco_de_Dados/blob/main/Neo4J_pathfindings.md)
+
+* [**Computer Scientists Establish the Best Way to Traverse a Graph**](https://www.quantamagazine.org/computer-scientists-establish-the-best-way-to-traverse-a-graph-20241025/). Dijkstra’s algorithm was long thought to be the most efficient way to find a graph’s best routes. Researchers have now proved that it’s “universally optimal.”
+
+<img src="https://www.quantamagazine.org/wp-content/uploads/2024/10/The_Shortest_Path-crMarkBelan-Desktop-v1-scaled.jpg" width="300">
+
   
