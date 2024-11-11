@@ -1,5 +1,7 @@
 # Neo4J, Centralidade e Detecção de Comunidades em Grafos
 
+**ATENÇÃO**: This need a procedure with the name `algo.degree` registered for this database instance. It is not in Campus Labs!
+
 ## 1. Centralidade com Cidades Brasileiras
 
 As medidas de centralidade ajudam a **identificar os nós mais importantes dentro de um grafo**.
