@@ -217,6 +217,8 @@ ORDER BY Qtde_Vezes DESC LIMIT 5
 ## Exercício 5.
 Mostre os diretores que dirigiram atores comuns ao diretor Glauber Rocha mas em gêneros diferentes
 
+### Sem UNWIND
+
 ```cypher
 MATCH (a1:Artista)<-[e1:Elenco]-(f1:Filme)-[e2:Elenco]->(a2:Artista)<-[e3:Elenco]-(f2:Filme)-[e4:Elenco]->(a3:Artista)
 //UNWIND [f1.generos] AS genGlauber, UNWIND [f2.generos] AS genOutros
@@ -234,8 +236,9 @@ RETURN a3.nome, COUNT(a3.nome) AS Força
 ORDER BY Força DESC
 ```
 
+### Com UNWIND
+
 ```cypher
-// tentativa com UNWIND - deu certo
 MATCH (a1:Artista)<-[e1:Elenco]-(f1:Filme)-[e2:Elenco]->(a2:Artista)<-[e3:Elenco]-(f2:Filme)-[e4:Elenco]->(a3:Artista)
 WHERE a1 <> a3
 AND a1.nome =~ '(?i).*glauber.*'
@@ -253,77 +256,26 @@ UNWIND listaOutros AS genOutrosdir
 WITH trim(genG) as gG, trim(genOutrosdir) AS GO, Outrodir AS diretores
 WHERE gG <> GO
 RETURN gG, GO, diretores
+
+"gG"       │"GO"       │"diretores"                   │
+╞═══════════╪═══════════╪══════════════════════════════╡
+│"Drama"    │"Comedy"   │"Domenico Paolella"           │
+├───────────┼───────────┼──────────────────────────────┤
+│"Drama"    │"Comedy"   │"José Luis Sáenz de Heredia"  │
+├───────────┼───────────┼──────────────────────────────┤
+│"Fantasy"  │"Drama"    │"Nelson Pereira dos Santos"   │
+├───────────┼───────────┼──────────────────────────────┤
+│"History"  │"Drama"    │"Nelson Pereira dos Santos"   │
+├───────────┼───────────┼──────────────────────────────┤
+│"Drama"    │"Romance"  │"Gillo Pontecorvo"            │
+├───────────┼───────────┼──────────────────────────────┤
+│"Drama"    │"Romance"  │"Maleno Malenotti"            │
+├───────────┼───────────┼──────────────────────────────┤
+(...)
+
 ```
 
-```cypher
-// sujeira em alguns generos com espaço em branco na separação
-//atualizando alguns titulos 
-MATCH (a1:Artista)<-[e1:Elenco]-(f:Filme)
-WHERE e1.tipo_participação =~ '(?i).*dir.*'
-AND a1.nome =~ '(?i).*glauber.*' AND a1.nome =~ '(?i).*rocha.*'
-RETURN *
-// o leão de sete cabeças
-MATCH (a1:Artista)<-[e1:Elenco]-(f:Filme)
-WHERE e1.tipo_participação =~ '(?i).*dir.*'
-AND a1.nome =~ '(?i).*glauber.*' AND a1.nome =~ '(?i).*rocha.*'
-AND f.titulo =~ '(?i).*il leone.*'
-SET f.titulo = 'O Leão de Sete Cabeças'
-RETURN *
-// terra em transe
-MATCH (a1:Artista)<-[e1:Elenco]-(f:Filme)
-WHERE e1.tipo_participação =~ '(?i).*dir.*'
-AND a1.nome =~ '(?i).*glauber.*' AND a1.nome =~ '(?i).*rocha.*'
-AND f.titulo =~ '(?i).*trance.*'
-SET f.titulo = 'Terra em transe'
-RETURN *
-// deus e o diabo
-MATCH (a1:Artista)<-[e1:Elenco]-(f:Filme)
-WHERE e1.tipo_participação =~ '(?i).*dir.*'
-AND a1.nome =~ '(?i).*glauber.*' AND a1.nome =~ '(?i).*rocha.*'
-AND f.titulo =~ '(?i).*dio nero.*'
-SET f.titulo = 'Deus e o Diabo na terra do Sol'
-RETURN *
-```
 
-```cypher
-// artistas que trabalharam com Glauber
-MATCH (a1:Artista)<-[e1:Elenco]-(f:Filme)-[e2:Elenco]->(a2:Artista)
-WHERE e1.tipo_participação =~ '(?i).*dir.*'
-AND a1.nome =~ '(?i).*glauber.*' AND a1.nome =~ '(?i).*rocha.*'
-AND a1 <> a2
-AND e2.tipo_participação =~ '(?i).*act.*'
-WITH DISTINCT a2.nome AS atores ORDER BY a2.nome
-WITH collect(atores) AS atores_glauber
-RETURN atores_glauber
-// excluindo nós
-MATCH (n:Glauber)
-DETACH DELETE n
-```
 
-```cypher
-// Nova estratégia : criando nós para os atores de Glauber juntamente com o gênero do filme que foram dirigidos pelo Glauber
-// depois trazer os diretores desses atores em filmes de gêneros diferentes
-MATCH (a1:Artista)<-[e1:Elenco]-(f:Filme)-[e2:Elenco]->(a2:Artista)
-WHERE e1.tipo_participação =~ '(?i).*dir.*'
-AND a1.nome =~ '(?i).*glauber.*' AND a1.nome =~ '(?i).*rocha.*'
-AND a1 <> a2
-AND e2.tipo_participação =~ '(?i).*act.*'
-WITH a2.nome AS gatores, f.generos as ggenero ORDER BY a2.nome
-WITH collect([gatores,ggenero]) AS atores_glauber
-FOREACH (i in range(0, size(atores_glauber)-1)
-   | FOREACH (node1 in [atores_glauber[i]]
-   | CREATE (:Glauber {atorg: node1[0], geng: node1[1]} ) ) )
-```
 
-```cypher
-// funcionou parcialmente mas precisa do unwind pq tem muitos filmes com mais de um genero e às x são o mesmo 
-MATCH (a1:Artista)<-[e1:Elenco]-(f:Filme)-[e2:Elenco]->(a2:Artista), (ag:Glauber)
-     WHERE a1.nome = ag.atorg
-AND e2.tipo_participação =~ '(?i).*dir.*'
-AND NOT a1.nome =~ '(?i).*glauber rocha.*' 
-AND NOT a2.nome =~ '(?i).*glauber rocha.*'
-AND a1 <> a2
-AND f.generos <> ag.geng
-RETURN a1.nome, a2.nome, f.titulo, f.generos, ag.geng
-ORDER BY a1.nome
-```
+
