@@ -21,14 +21,28 @@ ORDER BY a2.nome
 └────────────────┴──────────┴─────────┘
 ```
 
+Fique atento a essa forma de fazer as consultas, `a1.nome =~ '(?i).*fernanda montenegro.*'` ou `f.generos =~ '(?i).*drama.*'`, é como um `LIKE`da SQL e *case insensitive*. Para prova, prefira consultas desse tipo, mais abertas, a `a1.nome = 'Fernanda Montenegro'` ou `f.generos = 'drama'`. 
+
+> Veja aqui algumas variantes desse tipo de consulta.
+
+> **`a1<>a2`**
+
+```cypher
+MATCH (a1)<-[e1:Elenco]-(f)-[e2:Elenco]->(a2)
+WHERE e2.tipo_participação =~ '(?i).*act.*' 
+AND a1<>a2
+AND a1.nome =~ '(?i).*fernanda montenegro.*'
+AND ( f.generos =~ '(?i).*roman.*' )
+RETURN a2.nome, f.titulo, f.generos
+ORDER BY a2.nome
+```
+> Note que o `a1<>a2` não é requerido (embora recomendado) para excluir o nome da atriz. O Neo4J faz a exclusão implícita, mas não é intuitiva e deixar explícita pode evitar muitos erros na sua consulta.
+
 ## Exercício 2. 
 Repita a consulta 1) acima para os que não trabalharam diretamente com ela, 
 com maior força para fazer contato
 
 ```cypher
-//***** segundo circulo
-//** apareceu Luiz Fernando Guimarães com maior Força : 8, ou seja, tem 8 relacionamento que permitem chegar neste ator
-// Fernada Torres -> 6, Pedro Cardoso -> 1, Evandro Mesquita -> 1
 MATCH (a1:Artista)<-[e1:Elenco]-(f1:Filme)-[e2:Elenco]->(a2:Artista)<-[e3:Elenco]-(f2:Filme)-[e4:Elenco]->(a3:Artista)
 WHERE a1 <> a3
 AND a1.nome =~ '(?i).*fernanda montenegro.*'
@@ -36,11 +50,12 @@ AND e2.tipo_participação =~ '(?i).*act.*'
 AND e3.tipo_participação =~ '(?i).*act.*'
 AND e4.tipo_participação =~ '(?i).*act.*'
 AND NOT (a1)<-[:Elenco]-(:Filme)-[:Elenco]->(a3)
-// RETURN *
 RETURN a2.nome AS Trabalhou, a3.nome AS Não_Trabalhou, COUNT(a3) AS Força
 ORDER BY Força DESC
+
+// aqui mostra quem são esses relacionamentos
 //RETURN a3.nome, a2.nome, f2.titulo, f1.titulo 
-//ORDER BY a3.nome, a2.nome, f2.titulo, f1.titulo   **** aqui mostra quem são esses relacionamentos
+//ORDER BY a3.nome, a2.nome, f2.titulo, f1.titulo  
 
 ╒═════════════════════════╤═══════════════════════════╤═════╕
 │Trabalhou                │Não_Trabalhou              │Força│
@@ -60,6 +75,31 @@ ORDER BY Força DESC
 │"José Dumont"            │"Mariana Lima"             │2    │
 ├─────────────────────────┼───────────────────────────┼─────┤
 │"Marília Pêra"           │"José Wilker"              │2    │
+```
+
+> Veja aqui algumas variantes desse tipo de consulta.
+
+> **Força de quem Trabalhou junto** 
+
+```cypher
+MATCH (a1:Artista)<-[e1:Elenco]-(f)-[e2:Elenco]->(a2:Artista)
+WHERE a1.nome =~ '(?i).*fernanda montenegro.*'
+AND e2.tipo_participação =~ '(?i).*act.*'
+RETURN a2.nome AS Trabalhou, COUNT(a2) AS Força
+ORDER BY Força DESC
+```
+> **Força de quem Não Trabalhou junto**
+  
+```cypher
+MATCH (a1:Artista)<-[e1:Elenco]-(f1:Filme)-[e2:Elenco]->(a2:Artista)<-[e3:Elenco]-(f2:Filme)-[e4:Elenco]->(a3:Artista)
+WHERE a1 <> a3
+AND a1.nome =~ '(?i).*fernanda montenegro.*'
+AND e2.tipo_participação =~ '(?i).*act.*'
+AND e3.tipo_participação =~ '(?i).*act.*'
+AND e4.tipo_participação =~ '(?i).*act.*'
+AND NOT (a1)<-[:Elenco]-(:Filme)-[:Elenco]->(a3)
+RETURN a3.nome AS Não_Trabalhou, COUNT(a3) AS Força
+ORDER BY Força DESC
 ```
 
 ## Exercício 3.
