@@ -1,5 +1,7 @@
 # Neo4J, Pathfindinds Algorithms
 
+**ATENÇÃO**: This need a procedure with the name `algo.shortestPath.stream` and others registered for this database instance. It is not in Campus Labs!
+
 ## 1. Criando um Exemplo de Base de Dados
 
 Vamos criar um grafo simples que inclui nós (representando cidades) e relacionamentos (representando as estradas entre elas).
