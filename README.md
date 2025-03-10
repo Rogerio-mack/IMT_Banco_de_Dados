@@ -22,7 +22,23 @@ Lab3 **Create Table**
 
 notes: [Executing SQL Statements from a Text File](https://dev.mysql.com/doc/refman/8.0/en/mysql-batch-commands.html)
 
-notes: acesse os arquivos 
+notes:
+
+```
+mysql –u root –p –P 3300 –h localhost –D mydatabase
+
+mysql -u root -p mysql
+
+mysql -u root -p < c:/temp/exemplo1.sql
+
+mysql -u root -pmysql < c:/temp/exemplo1.sql
+
+mysql> source c:/temp/exemplo1.sql
+
+mysql> \. c:/temp/exemplo1.sql
+
+mysql -u root -p < c:/temp/exemplo1.sql > c:/temp/output.txt
+```
 
 [exemplo1.sql](https://github.com/Rogerio-mack/IMT_Banco_de_Dados/blob/main/exemplo1.sql) [download](https://github.com/Rogerio-mack/IMT_Banco_de_Dados/raw/main/exemplo1.sql) 
 
