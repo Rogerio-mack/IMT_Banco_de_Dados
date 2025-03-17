@@ -44,3 +44,9 @@ mysql -u root -p < c:/temp/exemplo1.sql > c:/temp/output.txt
 
 [exemplo2.sql](https://github.com/Rogerio-mack/IMT_Banco_de_Dados/blob/main/exemplo2.sql) [download](https://github.com/Rogerio-mack/IMT_Banco_de_Dados/raw/main/exemplo2.sql)
 
+Lab4 **Create Table (Workbench)**
+
+[Autores-Títulos](https://github.com/Rogerio-mack/IMT_Banco_de_Dados/blob/main/Lab3_2025S1.sql)
+
+
+
