@@ -68,7 +68,7 @@ Lab5 **Create Table (Models e mais...)**
 
 > PRIMARY KEY, FOREIGN KEY, **RELACIONAMENTO 1-N**, declaração na linha e posterior, nomeando CONSTRAINTs, UNIQUE 
 > > - Não se preocupe com o JOIN, é apresentado somente para ilustrar o uso.
-> > - **ON DELETE CASCADE** | **ON DELETE SET NULL** | **ON DELETE RESTRICT**
+> > - **ON DELETE CASCADE** | **ON DELETE SET NULL** | **ON DELETE RESTRICT** (\*)
 > > - **ON UPDATE CASCADE** | **ON UPDATE SET NULL**
 > > - Exemplo adicional: [Departamento-Funcionario](https://github.com/Rogerio-mack/IMT_Banco_de_Dados/blob/main/Exemplos/Departamento-Funcionario.sql)
 
