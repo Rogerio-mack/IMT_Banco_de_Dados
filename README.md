@@ -65,11 +65,17 @@ Lab5 **Create Table (Models e mais...)**
 
 [Pais-Cidade](https://github.com/Rogerio-mack/IMT_Banco_de_Dados/blob/main/Exemplos/Pais-Cidade.sql)
 
-> PRIMARY KEY, FOREIGN KEY, declaração na linha e posterior, nomeando CONSTRAINTs, UNIQUE 
+> PRIMARY KEY, FOREIGN KEY, **RELACIONAMENTO 1-N**, declaração na linha e posterior, nomeando CONSTRAINTs, UNIQUE 
 > > - Não se preocupe com o JOIN, é apresentado somente para ilustrar o uso.
 > > - **ON DELETE CASCADE** | **ON DELETE SET NULL** | **ON DELETE RESTRICT**
 > > - **ON UPDATE CASCADE** | **ON UPDATE SET NULL**
 > > - Exemplo adicional: [Departamento-Funcionario](https://github.com/Rogerio-mack/IMT_Banco_de_Dados/blob/main/Exemplos/Departamento-Funcionario.sql)
+
+[Aluno-Curso](https://github.com/Rogerio-mack/IMT_Banco_de_Dados/blob/main/Exemplos/Aluno-Curso.sql)
+
+> PRIMARY KEY composta, FOREIGN KEY, **RELACIONAMENTO N-N**, **Tabela/Relação Associativa** 
+> > - Não se preocupe com o JOIN, é apresentado somente para ilustrar o uso.
+> > - Exemplo adicional: [Medico-Paciente](https://github.com/Rogerio-mack/IMT_Banco_de_Dados/blob/main/Exemplos/Medico-Paciente.sql), **Atributo Associativo** 
 
 
 
