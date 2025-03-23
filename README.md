@@ -77,5 +77,7 @@ Lab5 **Create Table (Models e mais...)**
 > > - Não se preocupe com o JOIN, é apresentado somente para ilustrar o uso.
 > > - Exemplo adicional: [Medico-Paciente](https://github.com/Rogerio-mack/IMT_Banco_de_Dados/blob/main/Exemplos/Medico-Paciente.sql), **Atributo Associativo** 
 
+[Produtos_ALTER](https://github.com/Rogerio-mack/IMT_Banco_de_Dados/blob/main/Exemplos/Produtos_ALTER.sql)
 
-
+> ALTER TABLE ADD, MODIFY, DROP, COLUMN, CONSTRAINT
+> > - Exemplo adicional: [Pais-Cidade_ALTER](https://github.com/Rogerio-mack/IMT_Banco_de_Dados/blob/main/Exemplos/Pais-Cidade_ALTER.sql) 
