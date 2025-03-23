@@ -48,5 +48,28 @@ Lab4 **Create Table (Workbench)**
 
 [Autores-Títulos](https://github.com/Rogerio-mack/IMT_Banco_de_Dados/blob/main/Lab3_2025S1.sql)
 
+Lab5 **Create Table (Models e mais...)**
+
+[Autores-Títulos](https://github.com/Rogerio-mack/IMT_Banco_de_Dados/blob/main/Exemplos/Autores-Titulos.sql)
+
+> CREATE TABLE, Tipos básicos de dados, PRIMARY KEY, FOREIGN KEY, Relacionamento 1-N, AUTO_INCREMENT, INSERT, SELECT *
+> > - Lembre-se PRIMARY KEY e FOREIGN KEY precisam ter o mesmo tipo de dados!
+
+[Agendamentos-dates](https://github.com/Rogerio-mack/IMT_Banco_de_Dados/blob/main/Exemplos/Agendamentos-dates.sql)
+
+> Tipos DATE e Time, DATEDIFF, ADD_DATE, Select <campo> AS <campo-nome>
+
+[Produtos](https://github.com/Rogerio-mack/IMT_Banco_de_Dados/blob/main/Exemplos/Produtos.sql)
+
+> DROP TABLE [ IF EXISTS ], INSERT, DECIMAL, BOOLEAN e as restrições NULL, NOT NULL e DEFAULT. 
+
+[Pais-Cidade](https://github.com/Rogerio-mack/IMT_Banco_de_Dados/blob/main/Exemplos/Pais-Cidade.sql)
+
+> PRIMARY KEY, FOREIGN KEY, declaração na linha e posterior, nomeando CONSTRAINTs, UNIQUE 
+> > - Não se preocupe com o JOIN, é apresentado somente para ilustrar o uso.
+> > - **ON DELETE CASCADE** | **ON DELETE SET NULL** | **ON DELETE RESTRICT**
+> > - **ON UPDATE CASCADE** | **ON UPDATE SET NULL**
+> > - Exemplo adicional: [Departamento-Funcionario](https://github.com/Rogerio-mack/IMT_Banco_de_Dados/blob/main/Exemplos/Departamento-Funcionario.sql)
+
 
 
