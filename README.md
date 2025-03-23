@@ -54,6 +54,7 @@ Lab5 **Create Table (Models e mais...)**
 
 > CREATE TABLE, Tipos básicos de dados, PRIMARY KEY, FOREIGN KEY, Relacionamento 1-N, AUTO_INCREMENT, INSERT, SELECT *
 > > - Lembre-se PRIMARY KEY e FOREIGN KEY precisam ter o mesmo tipo de dados!
+> > - **Boas práticas!**: identação, nomes significativos, tipos de dados representativos, upper/lower case, não usar caracteres especiais, acentos ou 'ç' etc.
 
 [Agendamentos-dates](https://github.com/Rogerio-mack/IMT_Banco_de_Dados/blob/main/Exemplos/Agendamentos-dates.sql)
 
