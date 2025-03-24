@@ -29,8 +29,8 @@ Poste os seguintes arquivos separados (não zipados!) e com as extensões corret
 3. Saída .txt da seguinte consulta,
 
 ```sql
-SELECT a.nome AS artista, ab.titulo AS album, t.titulo AS trilha
+SELECT a.nome AS artista, ab.titulo AS album, f.titulo AS faixa
 FROM Artista a
 JOIN Album ab ON a.id = ab.artista_id
-JOIN Trilha t ON ab.id = t.album_id;
+JOIN Faixa f ON ab.id = f.album_id;
 ```
