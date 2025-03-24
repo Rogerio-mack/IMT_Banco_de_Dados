@@ -51,43 +51,43 @@ Lab4 **Create Table (Workbench)**
 
 Lab5 **Create Table (Models e mais...)**
 
-    **CREATE FROM MODELS**
-    > - MySQL
-    > - File > New Model
-    > - Add Diagram
-    > > - Crie seu diagrama
-    > - Database > Forward Engineer
-    > - next > ... > execução do script
-    
-    [Autores-Títulos](https://github.com/Rogerio-mack/IMT_Banco_de_Dados/blob/main/Exemplos/Autores-Titulos.sql)
-    
-    > CREATE TABLE, Tipos básicos de dados, PRIMARY KEY, FOREIGN KEY, Relacionamento 1-N, AUTO_INCREMENT, INSERT, SELECT *
-    > > - Lembre-se PRIMARY KEY e FOREIGN KEY precisam ter o mesmo tipo de dados!
-    > > - **Boas práticas!**: identação, nomes significativos, tipos de dados representativos, upper/lower case, não usar caracteres especiais, acentos ou 'ç' etc.
-    
-    [Agendamentos-dates](https://github.com/Rogerio-mack/IMT_Banco_de_Dados/blob/main/Exemplos/Agendamentos-dates.sql)
-    
-    > Tipos DATE e Time, DATEDIFF, ADD_DATE, Select <campo> AS <campo-nome>
-    
-    [Produtos](https://github.com/Rogerio-mack/IMT_Banco_de_Dados/blob/main/Exemplos/Produtos.sql)
-    
-    > DROP TABLE [ IF EXISTS ], INSERT, DECIMAL, BOOLEAN e as restrições NULL, NOT NULL e DEFAULT. 
-    
-    [Pais-Cidade](https://github.com/Rogerio-mack/IMT_Banco_de_Dados/blob/main/Exemplos/Pais-Cidade.sql)
-    
-    > PRIMARY KEY, FOREIGN KEY, **RELACIONAMENTO 1-N**, declaração na linha e posterior, nomeando CONSTRAINTs, UNIQUE 
-    > > - Não se preocupe com o JOIN, é apresentado somente para ilustrar o uso.
-    > > - **ON DELETE CASCADE** | **ON DELETE SET NULL** | **ON DELETE RESTRICT** (\*)
-    > > - **ON UPDATE CASCADE** | **ON UPDATE SET NULL**
-    > > - Exemplo adicional: [Departamento-Funcionario](https://github.com/Rogerio-mack/IMT_Banco_de_Dados/blob/main/Exemplos/Departamento-Funcionario.sql)
-    
-    [Aluno-Curso](https://github.com/Rogerio-mack/IMT_Banco_de_Dados/blob/main/Exemplos/Aluno-Curso.sql)
-    
-    > PRIMARY KEY composta, FOREIGN KEY, **RELACIONAMENTO N-N**, **Tabela/Relação Associativa** 
-    > > - Não se preocupe com o JOIN, é apresentado somente para ilustrar o uso.
-    > > - Exemplo adicional: [Medico-Paciente](https://github.com/Rogerio-mack/IMT_Banco_de_Dados/blob/main/Exemplos/Medico-Paciente.sql), **Atributo Associativo** 
-    
-    [Produtos_ALTER](https://github.com/Rogerio-mack/IMT_Banco_de_Dados/blob/main/Exemplos/Produtos_ALTER.sql)
-    
-    > ALTER TABLE ADD, MODIFY, DROP, COLUMN, CONSTRAINT
-    > > - Exemplo adicional: [Pais-Cidade_ALTER](https://github.com/Rogerio-mack/IMT_Banco_de_Dados/blob/main/Exemplos/Pais-Cidade_ALTER.sql) 
+**CREATE FROM MODELS**
+> - MySQL
+> - File > New Model
+> - Add Diagram
+> > - Crie seu diagrama
+> - Database > Forward Engineer
+> - next > ... > execução do script
+
+[Autores-Títulos](https://github.com/Rogerio-mack/IMT_Banco_de_Dados/blob/main/Exemplos/Autores-Titulos.sql)
+
+> CREATE TABLE, Tipos básicos de dados, PRIMARY KEY, FOREIGN KEY, Relacionamento 1-N, AUTO_INCREMENT, INSERT, SELECT *
+> > - Lembre-se PRIMARY KEY e FOREIGN KEY precisam ter o mesmo tipo de dados!
+> > - **Boas práticas!**: identação, nomes significativos, tipos de dados representativos, upper/lower case, não usar caracteres especiais, acentos ou 'ç' etc.
+
+[Agendamentos-dates](https://github.com/Rogerio-mack/IMT_Banco_de_Dados/blob/main/Exemplos/Agendamentos-dates.sql)
+
+> Tipos DATE e Time, DATEDIFF, ADD_DATE, Select <campo> AS <campo-nome>
+
+[Produtos](https://github.com/Rogerio-mack/IMT_Banco_de_Dados/blob/main/Exemplos/Produtos.sql)
+
+> DROP TABLE [ IF EXISTS ], INSERT, DECIMAL, BOOLEAN e as restrições NULL, NOT NULL e DEFAULT. 
+
+[Pais-Cidade](https://github.com/Rogerio-mack/IMT_Banco_de_Dados/blob/main/Exemplos/Pais-Cidade.sql)
+
+> PRIMARY KEY, FOREIGN KEY, **RELACIONAMENTO 1-N**, declaração na linha e posterior, nomeando CONSTRAINTs, UNIQUE 
+> > - Não se preocupe com o JOIN, é apresentado somente para ilustrar o uso.
+> > - **ON DELETE CASCADE** | **ON DELETE SET NULL** | **ON DELETE RESTRICT** (\*)
+> > - **ON UPDATE CASCADE** | **ON UPDATE SET NULL**
+> > - Exemplo adicional: [Departamento-Funcionario](https://github.com/Rogerio-mack/IMT_Banco_de_Dados/blob/main/Exemplos/Departamento-Funcionario.sql)
+
+[Aluno-Curso](https://github.com/Rogerio-mack/IMT_Banco_de_Dados/blob/main/Exemplos/Aluno-Curso.sql)
+
+> PRIMARY KEY composta, FOREIGN KEY, **RELACIONAMENTO N-N**, **Tabela/Relação Associativa** 
+> > - Não se preocupe com o JOIN, é apresentado somente para ilustrar o uso.
+> > - Exemplo adicional: [Medico-Paciente](https://github.com/Rogerio-mack/IMT_Banco_de_Dados/blob/main/Exemplos/Medico-Paciente.sql), **Atributo Associativo** 
+
+[Produtos_ALTER](https://github.com/Rogerio-mack/IMT_Banco_de_Dados/blob/main/Exemplos/Produtos_ALTER.sql)
+
+> ALTER TABLE ADD, MODIFY, DROP, COLUMN, CONSTRAINT
+> > - Exemplo adicional: [Pais-Cidade_ALTER](https://github.com/Rogerio-mack/IMT_Banco_de_Dados/blob/main/Exemplos/Pais-Cidade_ALTER.sql) 
