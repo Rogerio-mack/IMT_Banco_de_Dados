@@ -46,7 +46,8 @@ mysql -u root -p < c:/temp/exemplo1.sql > c:/temp/output.txt
 
 Lab4 **Create Table (Workbench)**
 
-[Autores-Títulos](https://github.com/Rogerio-mack/IMT_Banco_de_Dados/blob/main/Lab3_2025S1.sql)
+[Autores-Títulos](https://github.com/Rogerio-mack/IMT_Banco_de_Dados/blob/main/Lab3_2025S1.sql) | 
+[Solução](https://github.com/Rogerio-mack/IMT_Banco_de_Dados/blob/main/Exemplos/Autores-Titulos.sql)  
 
 Lab5 **Create Table (Models e mais...)**
 
