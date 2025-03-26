@@ -20,16 +20,24 @@ Poste os seguintes arquivos separados (não zipados!) e com as extensões corret
 
 ### **Formato**
 
-* **Nome dos arquivos:** INTERNA_<RA de entrega>.png, INTERNA_<RA de entrega>.sql
-* **Modelo para os scripts SQL:**
+* **Nome dos arquivos**
+
+> **INTERNA_\<RA de entrega\>.png, INTERNA_\<RA de entrega\>.sql**
+
+* **Modelo para os scripts SQL**
+
+Inicie os scripts com o nome de cada aluno e RA, como comentários conforme abaixo: 
 
 ```
--- <Inicie com o nome de cada aluno e RA,  conforme abaixo> 
 -- ALUNO: <nome aluno> - 25.00111-7
 -- ALUNO: <nome aluno> - 25.09999-7
 -- ALUNO: <nome aluno> - 25.09999-7
 
 -- Comentários
-<seus scripts>
+
+<seus scripts SQL>
+
+CREATE DATABASE (...)
+
 ```
 
