@@ -34,3 +34,27 @@ FROM Artista a
 JOIN Album ab ON a.id = ab.artista_id
 JOIN Faixa f ON ab.id = f.album_id;
 ```
+
+### **Formato**
+
+* **Nome dos arquivos**
+
+> **MUSICAS_\<RA de entrega\>.png, MUSICAS_\<RA de entrega\>.sql, MUSICAS_\<RA de entrega\>.txt****
+
+* **Modelo para os scripts SQL**
+
+Inicie os scripts com o nome de cada aluno e RA, como comentários conforme abaixo: 
+
+```
+-- ALUNO: <nome aluno> - 25.00111-7
+-- ALUNO: <nome aluno> - 25.09999-7
+-- ALUNO: <nome aluno> - 25.09999-7
+
+-- Comentários
+
+<seus scripts SQL>
+
+CREATE DATABASE (...)
+
+```
+
