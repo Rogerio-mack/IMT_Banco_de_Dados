@@ -15,5 +15,21 @@ Crie o modelo acima a partir do MySQL Workbench e **popule seu banco de dados co
 
 Poste os seguintes arquivos separados (não zipados!) e com as extensões corretas:
 
-1. Export .PNG do modelo
+1. Export .PNG do modelo 
 2. Script .SQL com a criação do modelo e o insert dos dados
+
+### **Formato**
+
+* **Nome dos arquivos:** INTERNA_<RA de entrega>.png, INTERNA_<RA de entrega>.sql
+* **Modelo para os scripts SQL:**
+
+```
+-- <Inicie com o nome de cada aluno e RA,  conforme abaixo> 
+-- ALUNO: <nome aluno> - 25.00111-7
+-- ALUNO: <nome aluno> - 25.09999-7
+-- ALUNO: <nome aluno> - 25.09999-7
+
+-- Comentários
+<seus scripts>
+```
+
