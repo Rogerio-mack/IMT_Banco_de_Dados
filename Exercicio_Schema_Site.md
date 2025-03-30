@@ -25,9 +25,9 @@ Seu arquivo deve ter exatamente 2 páginas conforme abaixo.
 #### 1. **Página 1.** 
 
 * **Grupo**
--- ALUNO: <nome aluno> - 25.00111-7
--- ALUNO: <nome aluno> - 25.09999-7
--- ALUNO: <nome aluno> - 25.09999-7
+- ALUNO: \<nome aluno\> - 25.00111-7
+- ALUNO: \<nome aluno\> - 25.09999-7
+- ALUNO: \<nome aluno\> - 25.09999-7
 
 * **link/aplicativo escolhido**: www.amazon.com.br
 
