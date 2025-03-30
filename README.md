@@ -121,4 +121,4 @@ composta com FK em FUNCIONARIO e é representada por um retângulo duplo) -->
 > 8. Dê um exemplo de generalização-especialização em um modelo de banco de dados. [SQL: Func-Prof-Adm HERANÇA](https://github.com/Rogerio-mack/IMT_Banco_de_Dados/blob/main/ Func-Prof-Adm-HERANCA.sql)
 <!-- (FUNCIONARIO> PROFESSOR | ADMNISTRATIVO, CLIENTE> PF | PJ, o postgres implementa superclasse) -->
 
-> *Note que há outros temas como SGBD, SQL e criação de tabelas (CREATE TABLE), informação e conhecimento etc. mas aqui você encontra alguns temas mais técnicos, sem prática de lab e que merecem sua atenção.* 
+> *Note que há outros temas como SGBD, SQL e criação de tabelas (CREATE TABLE), informação e conhecimento etc. mas aqui você encontra alguns temas mais técnicos, sem prática de lab e que merecem sua atenção. **Veja também os scripts exemplos do Lab anterior.*** 
