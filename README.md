@@ -109,7 +109,7 @@ mysql -u root -p < c:/temp/exemplo1.sql > c:/temp/output.txt
 > 1. O que é cardinalidade de um relacionamento? Dê exemplos de cardinalidade que são tipicamente de relacionamento 1-N e N-M.
 > 2. O que é restrição de participação em um relacionamento? 
 <!-- (obrigatória, opcional, total ou parcial) -->
-> 3. Diagramas One, Many, One and onlue one, Zero or one, One or many, Zero or many
+> 3. [Diagramas One, Many, One and onlue one, Zero or one, One or many, Zero or many](https://github.com/Rogerio-mack/IMT_Banco_de_Dados/blob/main/Figuras/relacionamentos_figs.png)
 > 4. ACID, o que são cada uma dessas propriedades?
 <!-- (consistência, operações não deixa o banco em um estado inconsistente, pense as integridades referenciais) -->
 > 5. Chaves superchave, chave candidata e primária? Estrangeira? 
