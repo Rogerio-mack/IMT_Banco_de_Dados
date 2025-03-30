@@ -35,7 +35,7 @@ Seu arquivo deve ter exatamente 2 páginas conforme abaixo.
 
 #### 1. **Página 2.**  
 
-* **Modelo ER**, destacando na figura em 
+* **Modelo ER**, criado com o **My SQL Workbench** destacando na figura em:
 
 1. AMARELO: a entidade fraca.
 2. VERDE: a generalização.
