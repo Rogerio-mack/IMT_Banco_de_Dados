@@ -94,6 +94,16 @@ mysql -u root -p < c:/temp/exemplo1.sql > c:/temp/output.txt
  
 ## Lab6 **Atividades de Entrega e Revisão para P1**
 
+#### Atividade 1 (iniciar em Lab)
+
+* [Exercicio_Schema_Musicas](https://github.com/Rogerio-mack/IMT_Banco_de_Dados/blob/main/Exercicio_Schema_Musicas.md)
+
+* [Exercicio_Schema_Internacoes](https://github.com/Rogerio-mack/IMT_Banco_de_Dados/blob/main/Exercicio_Schema_Internacoes.md)
+
+#### Atividade 2 (home)
+
+* [Exercicio_Schema_Site](https://github.com/Rogerio-mack/IMT_Banco_de_Dados/blob/main/Exercicio_Schema_Site.md)
+
 ### Questões de revisão para P1
 
 > 1. O que é cardinalidade de um relacionamento? Dê exemplos de cardinalidade que são tipicamente de relacionamento 1-N e N-M.
