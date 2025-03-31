@@ -106,7 +106,7 @@ mysql -u root -p < c:/temp/exemplo1.sql > c:/temp/output.txt
 
 * [Exercicio_Schema_Site](https://github.com/Rogerio-mack/IMT_Banco_de_Dados/blob/main/Exercicio_Schema_Site.md)
 
-> *Dúvidas sobre as diferenças de relacionamentos linha tracejada x cheia no MySQL...? [veja aqui](https://github.com/Rogerio-mack/IMT_Banco_de_Dados/tree/main/mysql_relations)
+> *Dúvidas sobre as diferenças de relacionamentos linha tracejada x cheia no MySQL...?* [veja aqui](https://github.com/Rogerio-mack/IMT_Banco_de_Dados/tree/main/mysql_relations)
 
 ### Questões de revisão para P1
 
