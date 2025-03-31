@@ -12,7 +12,7 @@ Crie e popule o seguinte esquema de banco de dados
 Neste esquema de banco de dados os campos **`id`** são chave e em cada entidade são incrementados automaticamente a cada nova inclusão. 
 O nome do artista contém o nome de uma 'Banda', 'Solista' ou 'Duo', que são os únicos tipos permitidos de artistas. 
 Os genêros de artista e dos álbuns também são restritos a 'Rock', 'Jazz', 'Pop', 'Classical', 'Hip Hop', 'Electronic'. A `web_page` é a url do artista
-e deve ser única na base de dados. A duração da faixa é no formato hh:mm:ss e o compositor o nome de um compositor que pode não ser um artista da base.
+e deve ser única na base de dados. A duração da faixa é no formato hh:mm:ss e o compositor (o nome de um compositor) pode não ser um artista da base.
 Cada álbum pertence a um único artista que pode ter vários álbuns, assim como cada faixa pertence a um único álbum, embora possam existir 
 faixas 'single' que não irão pertencer a nenhum álbum. Essas faixas são indicadas pelo valor TRUE em `lancamento_single`. `web_page` e `compositor` pode admitir ausência de valores.
 Além disso no caso de exclusão ou atualização de um álbum deve refletir a mesma alteração nas faixas do álbum, mas alterção ou mudanças nos artistas devem ser restritas.
