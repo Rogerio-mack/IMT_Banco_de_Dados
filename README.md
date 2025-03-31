@@ -100,6 +100,8 @@ mysql -u root -p < c:/temp/exemplo1.sql > c:/temp/output.txt
 
 * [Exercicio_Schema_Internacoes](https://github.com/Rogerio-mack/IMT_Banco_de_Dados/blob/main/Exercicio_Schema_Internacoes.md)
 
+> [Tutorial Prático de SQL](https://www.w3schools.com/sql/)
+
 #### Atividade 2 (home)
 
 * [Exercicio_Schema_Site](https://github.com/Rogerio-mack/IMT_Banco_de_Dados/blob/main/Exercicio_Schema_Site.md)
@@ -123,4 +125,4 @@ composta com FK em FUNCIONARIO e é representada por um retângulo duplo) -->
 
 > *Note que há outros temas como SGBD, SQL e criação de tabelas (CREATE TABLE), informação e conhecimento etc. mas aqui você encontra alguns temas mais técnicos, sem prática de lab e que merecem sua atenção. **Veja também os scripts exemplos do Lab anterior.***
 
-> [Tutorial Prático de SQL](https://www.w3schools.com/sql/)
+
