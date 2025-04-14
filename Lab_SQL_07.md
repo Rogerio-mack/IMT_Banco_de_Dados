@@ -7,6 +7,15 @@ https://learn.microsoft.com/en-us/sql/t-sql/queries/select-transact-sql?view=sql
 ## 2. Popule as tabelas
 
 ```sql
+create table vendedores (
+ idvendedor int not null,
+ cpf char(14) not null,
+ nome varchar(50) not null,
+ salariofixo decimal(8,2) not null,
+ metavendas decimal(8,2) not null,
+ totalvendasrealizadas decimal(8,2) not null,
+ primary key(idvendedor));
+
 insert into vendedores (idvendedor, cpf, nome, salariofixo, metavendas, totalvendasrealizadas) values 
 (100, '298.876.123.23', 'Paulo Souza', 2440.00, 5000.00, 3400.00),
 (200, '333.657.480.78', 'Ana Catarina', 2440.00, 4000.00, 4400.00),
