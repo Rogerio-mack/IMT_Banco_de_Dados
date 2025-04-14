@@ -39,22 +39,31 @@ insert into celulares (idvendedor,celular) values
 ## 3. Escrever os comandos SQL para as seguintes consultas:
 
 a) Listar todos os vendedores cadastrados no banco de dados.
+
 b) Listar todos os vendedores cadastrados no banco de dados em ordem alfabética
 crescente de nome.
+
 c) Listar todos os vendedores cadastrados no banco de dados em ordem alfabética
 decrescente de nome.
+
 d) Listar o nome e as vendas realizadas de todos os vendedores do banco de dados.
+
 e) Listar o nome e as vendas realizadas de todos os vendedores do banco de dados em
 ordem decrescente de total de vendas realizadas.
+
 f) Listar o nome, a meta de vendas e as vendas realizadas de todos os vendedores do
 banco de dados que ultrapassaram a meta de vendas, em ordem decrescente de total de
 vendas realizadas.
+
 g) Listar o nome, a meta de vendas e as vendas realizadas de todos os vendedores do
 banco de dados que tiveram as vendas realizadas inferiores ou iguais à meta de vendas,
 em ordem decrescente de total de vendas realizadas.
+
 h) Listar a média de vendas realizadas pelos vendedores.
+
 i) Listar a média de vendas realizadas pelos vendedores, com arredondamento de 2 casas
 decimais.
+
 j) Listar a diferença entre a meta de vendas e o total de vendas realizadas de cada
 vendedor em ordem alfabética de nome.
 
