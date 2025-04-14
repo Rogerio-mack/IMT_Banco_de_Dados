@@ -127,4 +127,7 @@ composta com FK em FUNCIONARIO e é representada por um retângulo duplo) -->
 
 > *Note que há outros temas como SGBD, SQL e criação de tabelas (CREATE TABLE), informação e conhecimento etc. mas aqui você encontra alguns temas mais técnicos, sem prática de lab e que merecem sua atenção. **Veja também os scripts exemplos do Lab anterior.***
 
+## Lab7 **DML, SQL Simples**
 
+[Teoria](https://github.com/Rogerio-mack/IMT_Banco_de_Dados/blob/main/Lab_SQL_07_teoria.sql) | 
+[Exercício](https://github.com/Rogerio-mack/IMT_Banco_de_Dados/blob/main/Lab_SQL_07.md)
