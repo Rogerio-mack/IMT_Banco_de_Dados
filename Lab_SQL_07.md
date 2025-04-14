@@ -6,6 +6,7 @@ https://learn.microsoft.com/en-us/sql/t-sql/queries/select-transact-sql?view=sql
 
 ## 2. Popule as tabelas
 
+```sql
 insert into vendedores (idvendedor, cpf, nome, salariofixo, metavendas, totalvendasrealizadas) values 
 (100, '298.876.123.23', 'Paulo Souza', 2440.00, 5000.00, 3400.00),
 (200, '333.657.480.78', 'Ana Catarina', 2440.00, 4000.00, 4400.00),
@@ -33,6 +34,7 @@ insert into celulares (idvendedor,celular) values
 (500, '11 99977-9944'),
 (600, '11 87654-0042'),
 (600, '11 99998-0062');
+```
 
 ## 3. Escrever os comandos SQL para as seguintes consultas:
 
