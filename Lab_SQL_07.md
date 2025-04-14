@@ -1,11 +1,10 @@
-1. Complemento SELECT SIMPLES
+# SELECT SIMPLES
 
-Lab07_complemento.sqlDownload Lab07_complemento.sql
-2. Select syntax
+## 1. Select syntax
 
 https://learn.microsoft.com/en-us/sql/t-sql/queries/select-transact-sql?view=sql-server-ver16Links to an external site. 
 
-3. Popule as tabelas
+## 2. Popule as tabelas
 
 insert into vendedores (idvendedor, cpf, nome, salariofixo, metavendas, totalvendasrealizadas) values 
 (100, '298.876.123.23', 'Paulo Souza', 2440.00, 5000.00, 3400.00),
@@ -35,7 +34,7 @@ insert into celulares (idvendedor,celular) values
 (600, '11 87654-0042'),
 (600, '11 99998-0062');
 
-4. Escrever os comandos SQL para as seguintes consultas:
+## 3. Escrever os comandos SQL para as seguintes consultas:
 
 a) Listar todos os vendedores cadastrados no banco de dados.
 b) Listar todos os vendedores cadastrados no banco de dados em ordem alfabética
@@ -57,7 +56,7 @@ decimais.
 j) Listar a diferença entre a meta de vendas e o total de vendas realizadas de cada
 vendedor em ordem alfabética de nome.
 
-5. Desafio
+## 4. Desafio
 
 Qual o percentual de vendedores com meta maior que R$ 4000,00?
 
