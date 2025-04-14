@@ -1,3 +1,21 @@
+create database alunos;
+use alunos;
+
+create table alunos(id_aluno integer not null,
+nome varchar(50) not null,
+idade decimal(2),
+sexo char(1),
+primary key(id_aluno));
+
+insert into alunos(id_aluno, nome, idade, sexo) values
+(100, 'Daniel Francisconi', 28, 'M'),
+(200, 'Anna Paula', 22, 'F'),
+(300, 'Rodrigo Peres', 21, 'M'),
+(400, 'Henrique de Oliveira', 19, 'M'),
+(700, 'Alváro de Campos', 19, 'M'),
+(500, 'Beatriz Carvalho', 19, 'F'),
+(600, 'Vitória Sandos', 18, 'F');
+
 select * from alunos;
 
 -- selecionando atributos
