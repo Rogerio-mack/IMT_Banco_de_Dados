@@ -129,5 +129,5 @@ composta com FK em FUNCIONARIO e é representada por um retângulo duplo) -->
 
 ## Lab7 **DML, SQL Simples**
 
-[Teoria](https://github.com/Rogerio-mack/IMT_Banco_de_Dados/blob/main/Lab_SQL_07_teoria.sql) | 
+[Exemplos](https://github.com/Rogerio-mack/IMT_Banco_de_Dados/blob/main/Lab_SQL_07_teoria.sql) | 
 [Exercício](https://github.com/Rogerio-mack/IMT_Banco_de_Dados/blob/main/Lab_SQL_07.md)
