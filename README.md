@@ -132,7 +132,7 @@ composta com FK em FUNCIONARIO e é representada por um retângulo duplo) -->
 [Exemplos](https://github.com/Rogerio-mack/IMT_Banco_de_Dados/blob/main/Lab_SQL_07_teoria.sql) | 
 [Exercício](https://github.com/Rogerio-mack/IMT_Banco_de_Dados/blob/main/Lab_SQL_07.md)
 
-## Lab7 **DML, SQL Simples... IN, BETWEEN, LIKE, REGEXP**
+## Lab8 **DML, SQL Simples... IN, BETWEEN, LIKE, REGEXP**
 
 [Exemplos](https://github.com/Rogerio-mack/IMT_Banco_de_Dados/blob/main/Lab_SQL_08_teoria.sql) | 
 [Exercício](https://github.com/Rogerio-mack/IMT_Banco_de_Dados/blob/main/Lab_SQL_08.md)
