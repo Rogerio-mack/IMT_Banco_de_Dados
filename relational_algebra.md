@@ -15,14 +15,14 @@ select nome, idade, sexo from alunos where idade > 10;
 ```
 
 ```
-Isso ok,
+Isso ok:
 
 ```
 
 $$ \sigma_{idade > 10}( \Pi_{\text{nome, sexo, idade}}(Alunos) ) $$
 
 ```
-Isso nok 
+Isso ok: 
 ```
 
 $$ \Pi_{\text{nome, sexo}}(\sigma_{idade > 10}(Alunos) ) $$
@@ -30,7 +30,7 @@ $$ \Pi_{\text{nome, sexo}}(\sigma_{idade > 10}(Alunos) ) $$
 
 
 ```
-Mas isso nok 
+Mas isso nok: 
 ```
 
 $$ \sigma_{idade > 10}( \Pi_{\text{nome, sexo}}(Alunos) ) $$
