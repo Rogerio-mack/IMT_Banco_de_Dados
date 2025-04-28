@@ -45,3 +45,24 @@ a on s.album_id = a.album_id;
 | 1         | ...And Justice For All                 | 1988        | 1        | One                                     | 7.25     |
 | 2         | Black Album                             | 1991        | 2       | Sad But True                            | 5.29     |
 | 13        | Sgt. Pepper's Lonely Hearts Club Band | 1967        | 13      | Sgt. Pepper's Lonely Hearts Club Band | 2.0333   |
+
+# Album
+| album_id | name                                      | year |
+| :------- | :---------------------------------------- | :--- |
+| 1        | ...And Justice For All                   | 1988 |
+| 2        | Black Album                               | 1991 |
+| 13       | Sgt. Pepper's Lonely Hearts Club Band | 1967 |
+| 7      | Reptile | 2001 |
+
+# RIGHT JOIN
+```
+select s.name, a.name, s.album_id, a.album_id
+from song as s right join album as a on s.album_id = a.album_id;
+```
+
+| album\_id | album\_name                             | album\_year | s.album\_id | song\_name                              | duration |
+| :-------- | :-------------------------------------- | :---------- | :------- | :-------------------------------------- | :------- |
+| 1         | ...And Justice For All                 | 1988        | 1        | One                                     | 7.25     |
+| 2         | Black Album                             | 1991        | 2       | Sad But True                            | 5.29     |
+| 13        | Sgt. Pepper's Lonely Hearts Club Band | 1967        | 13      | Sgt. Pepper's Lonely Hearts Club Band | 2.0333   |
+| 7        | Reptile | 2001        | null     | null | null   |
