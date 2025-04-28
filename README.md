@@ -146,5 +146,5 @@ composta com FK em FUNCIONARIO e é representada por um retângulo duplo) -->
 
 [Exercício](https://github.com/Rogerio-mack/IMT_Banco_de_Dados/blob/main/Lab09.pdf)
 
-[Desafio](https://github.com/Rogerio-mack/IMT_Banco_de_Dados/blob/main/Lab09_complemento_long.sql) | 
+[Desafio](https://github.com/Rogerio-mack/IMT_Banco_de_Dados/blob/main/Lab09_complemento_long.sql)  
 
