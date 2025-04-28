@@ -1,6 +1,6 @@
 CREATE DATABASE IF NOT EXISTS lab08;
 -- DDL para a tabela funcionarios
-USE dbemployee;
+USE lab08;
 CREATE TABLE IF NOT EXISTS funcionarios (
     idFuncionario INT PRIMARY KEY,
     nomeFuncionario VARCHAR(255),
