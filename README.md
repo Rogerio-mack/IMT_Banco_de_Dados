@@ -136,8 +136,7 @@ composta com FK em FUNCIONARIO e é representada por um retângulo duplo) -->
 
 ## Lab8 **DML, SQL Simples... IN, BETWEEN, IS NULL, LIKE, REGEXP**
 
-[Exemplos](https://github.com/Rogerio-mack/IMT_Banco_de_Dados/blob/main/Lab_SQL_08_teoria.sql) | 
-[Exercício](https://github.com/Rogerio-mack/IMT_Banco_de_Dados/blob/main/Lab_SQL_08.md)
+[Exemplos](https://github.com/Rogerio-mack/IMT_Banco_de_Dados/blob/main/Lab_SQL_08_teoria.sql) | [Create | Load das tabelas para o Exercício](https://github.com/Rogerio-mack/IMT_Banco_de_Dados/blob/main/lab08_load.md) | [Exercício](https://github.com/Rogerio-mack/IMT_Banco_de_Dados/blob/main/Lab_SQL_08.md)
 
 ## Lab9 **Alter e JOINS**
 
