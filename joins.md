@@ -15,7 +15,7 @@
 
 # Produto Cartesiano
 ```
-select s.name, a.name, s.album_id, a.album_id from song as s, album as a;
+select a.album_id, a.name, a.year, s.album_id, s.name, s.duration from song as s, album as a;
 ```
 | album\_id | album\_name                             | album\_year | s.album\_id | song\_name                              | duration |
 | :-------- | :-------------------------------------- | :---------- | :------- | :-------------------------------------- | :------- |
