@@ -138,3 +138,13 @@ composta com FK em FUNCIONARIO e é representada por um retângulo duplo) -->
 
 [Exemplos](https://github.com/Rogerio-mack/IMT_Banco_de_Dados/blob/main/Lab_SQL_08_teoria.sql) | 
 [Exercício](https://github.com/Rogerio-mack/IMT_Banco_de_Dados/blob/main/Lab_SQL_08.md)
+
+## Lab9 **Alter e JOINS**
+
+[Exemplos 1](https://github.com/Rogerio-mack/IMT_Banco_de_Dados/blob/main/Lab9_complemento_short-2-1.sql) | 
+[Exemplos 2](https://github.com/Rogerio-mack/IMT_Banco_de_Dados/blob/main/Lab9_complemento_short_online.sql) 
+
+[Exercício](https://github.com/Rogerio-mack/IMT_Banco_de_Dados/blob/main/Lab9.pdf)
+
+[Desafio](https://github.com/Rogerio-mack/IMT_Banco_de_Dados/blob/main/Lab9_complemento_long.sql) | 
+
