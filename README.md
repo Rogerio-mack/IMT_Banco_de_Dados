@@ -129,9 +129,8 @@ composta com FK em FUNCIONARIO e é representada por um retângulo duplo) -->
 
 ## Lab7 **DML, SQL Simples**
 
-* [Exemplos](https://github.com/Rogerio-mack/IMT_Banco_de_Dados/blob/main/Lab_SQL_07_teoria.sql) | 
-* [Exercício](https://github.com/Rogerio-mack/IMT_Banco_de_Dados/blob/main/Lab_SQL_07.md) 
-> * [Solução](https://github.com/Rogerio-mack/IMT_Banco_de_Dados/blob/main/Lab07_solucao.sql)
+* [Exemplos](https://github.com/Rogerio-mack/IMT_Banco_de_Dados/blob/main/Lab_SQL_07_teoria.sql)  
+* [Exercícios SELECT SIMPLES](https://github.com/Rogerio-mack/IMT_Banco_de_Dados/blob/main/Lab_SQL_07.md) | [Solução](https://github.com/Rogerio-mack/IMT_Banco_de_Dados/blob/main/Lab07_solucao.sql)
 
 > [SQL *versus* Álgebra Relacional](https://github.com/Rogerio-mack/IMT_Banco_de_Dados/blob/main/relational_algebra.md)
 
@@ -139,16 +138,14 @@ composta com FK em FUNCIONARIO e é representada por um retângulo duplo) -->
 
 * [Exemplos](https://github.com/Rogerio-mack/IMT_Banco_de_Dados/blob/main/Lab_SQL_08_teoria.sql)  
 * [Create Automoveis-Funcionario](https://github.com/Rogerio-mack/IMT_Banco_de_Dados/blob/main/lab08_load.sql) 
-* [Exercício](https://github.com/Rogerio-mack/IMT_Banco_de_Dados/blob/main/Lab_SQL_08.md)
-> * [Solução](https://github.com/Rogerio-mack/IMT_Banco_de_Dados/blob/main/Lab09_solucao.sql)
+* [Exercícios SELECT](https://github.com/Rogerio-mack/IMT_Banco_de_Dados/blob/main/Lab_SQL_08.md) | [Solução](https://github.com/Rogerio-mack/IMT_Banco_de_Dados/blob/main/Lab09_solucao.sql)
 
 ## Lab9 **Alter e JOINS**
 
 [Introdução aos Joins](https://github.com/Rogerio-mack/IMT_Banco_de_Dados/blob/main/joins.md)
 
 * [Exemplo 1](https://github.com/Rogerio-mack/IMT_Banco_de_Dados/blob/main/Lab09_complemento_short-2-1.sql) | [Exemplo 2](https://github.com/Rogerio-mack/IMT_Banco_de_Dados/blob/main/Lab09_complemento_short_online.sql) 
-* [Exercício](https://github.com/Rogerio-mack/IMT_Banco_de_Dados/blob/main/Lab09.pdf)
-> * [Solução](https://github.com/Rogerio-mack/IMT_Banco_de_Dados/blob/main/Lab09_solucao.sql)
+* [Exercícios JOINs](https://github.com/Rogerio-mack/IMT_Banco_de_Dados/blob/main/Lab09.pdf) |[Solução](https://github.com/Rogerio-mack/IMT_Banco_de_Dados/blob/main/Lab09_solucao.sql)
 
 ## Lab10 **JOINS e GroupBy**
 
@@ -156,15 +153,13 @@ composta com FK em FUNCIONARIO e é representada por um retângulo duplo) -->
 
 * [departamentos_funcionarios load](https://github.com/Rogerio-mack/IMT_Banco_de_Dados/blob/main/exercicios/join_departamentos_funcionarios.sql)
 * [Schema](https://github.com/Rogerio-mack/IMT_Banco_de_Dados/blob/main/exercicios/join_departamentos_funcionarios.png)
-* [Exercícios](https://github.com/Rogerio-mack/IMT_Banco_de_Dados/blob/main/exercicios/join_departamentos_funcionarios_questoes.sql)
-> * [Solução](https://github.com/Rogerio-mack/IMT_Banco_de_Dados/blob/main/exercicios/join_departamentos_funcionarios_solucao.sql)
+* [Exercícios JOINs 2](https://github.com/Rogerio-mack/IMT_Banco_de_Dados/blob/main/exercicios/join_departamentos_funcionarios_questoes.sql) | [Solução](https://github.com/Rogerio-mack/IMT_Banco_de_Dados/blob/main/exercicios/join_departamentos_funcionarios_solucao.sql)
 
 ### alunos_matriculas_cursos
 
 * [dalunos_matriculas_cursos load](https://github.com/Rogerio-mack/IMT_Banco_de_Dados/blob/main/exercicios/join_alunos_matriculas_cursos.sql)
 * [Schema](https://github.com/Rogerio-mack/IMT_Banco_de_Dados/blob/main/exercicios/join_alunos_matriculas_cursos.png)
-* [Exercícios](https://github.com/Rogerio-mack/IMT_Banco_de_Dados/blob/main/exercicios/join_alunos_matriculas_cursos_questoes.sql)
-> * [Solução](https://github.com/Rogerio-mack/IMT_Banco_de_Dados/blob/main/exercicios/join_alunos_matriculas_cursos_solucao.sql)
+* [Exercícios JOINs 3](https://github.com/Rogerio-mack/IMT_Banco_de_Dados/blob/main/exercicios/join_alunos_matriculas_cursos_questoes.sql) |[Solução](https://github.com/Rogerio-mack/IMT_Banco_de_Dados/blob/main/exercicios/join_alunos_matriculas_cursos_solucao.sql)
 
 ### vendas
 
