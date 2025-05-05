@@ -145,7 +145,7 @@ composta com FK em FUNCIONARIO e é representada por um retângulo duplo) -->
 [Introdução aos Joins](https://github.com/Rogerio-mack/IMT_Banco_de_Dados/blob/main/joins.md)
 
 * [Exemplo 1](https://github.com/Rogerio-mack/IMT_Banco_de_Dados/blob/main/Lab09_complemento_short-2-1.sql) | [Exemplo 2](https://github.com/Rogerio-mack/IMT_Banco_de_Dados/blob/main/Lab09_complemento_short_online.sql) 
-* [Exercícios JOINs](https://github.com/Rogerio-mack/IMT_Banco_de_Dados/blob/main/Lab09.pdf) |[Solução](https://github.com/Rogerio-mack/IMT_Banco_de_Dados/blob/main/Lab09_solucao.sql)
+* [Exercícios JOINs](https://github.com/Rogerio-mack/IMT_Banco_de_Dados/blob/main/Lab09.pdf) | [Solução](https://github.com/Rogerio-mack/IMT_Banco_de_Dados/blob/main/Lab09_solucao.sql)
 
 ## Lab10 **JOINS e GroupBy**
 
