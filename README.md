@@ -157,7 +157,7 @@ composta com FK em FUNCIONARIO e é representada por um retângulo duplo) -->
 
 ### alunos_matriculas_cursos
 
-* [dalunos_matriculas_cursos load](https://github.com/Rogerio-mack/IMT_Banco_de_Dados/blob/main/exercicios/join_alunos_matriculas_cursos.sql)
+* [alunos_matriculas_cursos load](https://github.com/Rogerio-mack/IMT_Banco_de_Dados/blob/main/exercicios/join_alunos_matriculas_cursos.sql)
 * [Schema](https://github.com/Rogerio-mack/IMT_Banco_de_Dados/blob/main/exercicios/join_alunos_matriculas_cursos.png)
 * [Exercícios JOINs 3](https://github.com/Rogerio-mack/IMT_Banco_de_Dados/blob/main/exercicios/join_alunos_matriculas_cursos_questoes.sql) | [Solução](https://github.com/Rogerio-mack/IMT_Banco_de_Dados/blob/main/exercicios/join_alunos_matriculas_cursos_solucao.sql)
 
