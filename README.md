@@ -138,7 +138,7 @@ composta com FK em FUNCIONARIO e é representada por um retângulo duplo) -->
 
 * [Exemplos](https://github.com/Rogerio-mack/IMT_Banco_de_Dados/blob/main/Lab_SQL_08_teoria.sql)  
 * [Create Automoveis-Funcionario](https://github.com/Rogerio-mack/IMT_Banco_de_Dados/blob/main/lab08_load.sql) 
-* [Exercícios SELECT](https://github.com/Rogerio-mack/IMT_Banco_de_Dados/blob/main/Lab_SQL_08.md) | [Solução](https://github.com/Rogerio-mack/IMT_Banco_de_Dados/blob/main/Lab09_solucao.sql)
+* [Exercícios SELECT](https://github.com/Rogerio-mack/IMT_Banco_de_Dados/blob/main/Lab_SQL_08.md) | [Solução](https://github.com/Rogerio-mack/IMT_Banco_de_Dados/blob/main/Lab08_solucao.sql)
 
 ## Lab9 **Alter e JOINS**
 
