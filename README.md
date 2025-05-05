@@ -147,13 +147,15 @@ composta com FK em FUNCIONARIO e é representada por um retângulo duplo) -->
 * [Exemplo 1](https://github.com/Rogerio-mack/IMT_Banco_de_Dados/blob/main/Lab09_complemento_short-2-1.sql) | [Exemplo 2](https://github.com/Rogerio-mack/IMT_Banco_de_Dados/blob/main/Lab09_complemento_short_online.sql) 
 * [Exercícios JOINs](https://github.com/Rogerio-mack/IMT_Banco_de_Dados/blob/main/Lab09.pdf) | [Solução](https://github.com/Rogerio-mack/IMT_Banco_de_Dados/blob/main/Lab09_solucao.sql)
 
-## Lab10 **JOINS e GroupBy**
+## Lab10 **JOINS 1-N**
 
 ### departamentos_funcionarios
 
 * [departamentos_funcionarios load](https://github.com/Rogerio-mack/IMT_Banco_de_Dados/blob/main/exercicios/join_departamentos_funcionarios.sql)
 * [Schema](https://github.com/Rogerio-mack/IMT_Banco_de_Dados/blob/main/exercicios/join_departamentos_funcionarios.png)
 * [Exercícios JOINs 2](https://github.com/Rogerio-mack/IMT_Banco_de_Dados/blob/main/exercicios/join_departamentos_funcionarios_questoes.sql) | [Solução](https://github.com/Rogerio-mack/IMT_Banco_de_Dados/blob/main/exercicios/join_departamentos_funcionarios_solucao.sql)
+
+## Lab11 **JOINS N-M e GroupBy**
 
 ### alunos_matriculas_cursos
 
