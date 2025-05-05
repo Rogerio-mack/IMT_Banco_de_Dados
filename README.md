@@ -165,7 +165,7 @@ composta com FK em FUNCIONARIO e é representada por um retângulo duplo) -->
 
 ### vendas
 
-* [dalunos_matriculas_cursos load](https://github.com/Rogerio-mack/IMT_Banco_de_Dados/blob/main/exercicios/vendas.sql)
+* [alunos_matriculas_cursos load](https://github.com/Rogerio-mack/IMT_Banco_de_Dados/blob/main/exercicios/vendas.sql)
 * [Schema](https://github.com/Rogerio-mack/IMT_Banco_de_Dados/blob/main/exercicios/vendas.png)
 * [Exemplos - GroupBy | Exists](https://github.com/Rogerio-mack/IMT_Banco_de_Dados/blob/main/exercicios/vendas_groupby_exists.sql)
 
