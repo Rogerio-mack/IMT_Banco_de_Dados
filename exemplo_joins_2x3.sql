@@ -19,6 +19,6 @@ WHERE ...
  
 SELECT *
 FROM (FUNCIONARIO as f 
-JOIN FUNCIONARIO-PROJETO fp ON f.id_funcionario = p.id_funcionario)
+JOIN FUNCIONARIO-PROJETO fp ON f.id_funcionario = fp.id_funcionario)
 JOIN PROJETO p ON fp.id_projeto = p.id_projeto 
 WHERE ...
