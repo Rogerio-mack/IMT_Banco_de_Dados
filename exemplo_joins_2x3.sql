@@ -1,5 +1,7 @@
---
 -- AERONAVE (n) - (1) PASSAGEIRO 
+--
+-- AERONAVE (n)       -         (1) PASSAGEIRO 
+--     a.id_passageiro = p.id_passageiro 
 --
 
 SELECT *
@@ -10,7 +12,10 @@ WHERE ...
 --
 -- FUNCIONARIO (n) - FUNCIONARIO-PROJETO - (m) PROJETO
 --
-
+-- FUNCIONARIO (n)            -                FUNCIONARIO-PROJETO               -               (m) PROJETO
+--        ON f.id_funcionario = fp.id_funcionario                  fp.id_projeto = fp.id_projeto 
+--
+ 
 SELECT *
 FROM FUNCIONARIO as f 
 JOIN FUNCIONARIO-PROJETO fp ON f.id_funcionario = fp.id_funcionario
