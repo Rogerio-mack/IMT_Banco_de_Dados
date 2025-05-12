@@ -1,6 +1,6 @@
--- AERONAVE (n) - (1) PASSAGEIRO 
+-- AERONAVE (1) - (n) PASSAGEIRO 
 --
--- AERONAVE (n)       -         (1) PASSAGEIRO 
+-- AERONAVE (1)       -         (n) PASSAGEIRO 
 --     a.id_passageiro = p.id_passageiro 
 --
 
