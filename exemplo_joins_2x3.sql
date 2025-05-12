@@ -10,7 +10,8 @@ JOIN PASSAGEIRO p ON a.id_passageiro = p.id_passageiro
 WHERE ...
 
 --
--- FUNCIONARIO (n) - FUNCIONARIO-PROJETO - (m) PROJETO
+-- FUNCIONARIO (n)    -     FUNCIONARIO-PROJETO        -    (m) PROJETO
+-- id_funcionario           id_funcionario,id_projeto       id_projeto                     
 --
 -- (FUNCIONARIO (n)            -                FUNCIONARIO-PROJETO)              -               (m) PROJETO
 --        ON f.id_funcionario = fp.id_funcionario                  On fp.id_projeto = fp.id_projeto 
