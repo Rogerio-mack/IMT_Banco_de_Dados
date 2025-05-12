@@ -12,12 +12,12 @@ WHERE ...
 --
 -- FUNCIONARIO (n) - FUNCIONARIO-PROJETO - (m) PROJETO
 --
--- FUNCIONARIO (n)            -                FUNCIONARIO-PROJETO               -               (m) PROJETO
---        ON f.id_funcionario = fp.id_funcionario                  fp.id_projeto = fp.id_projeto 
+-- (FUNCIONARIO (n)            -                FUNCIONARIO-PROJETO)              -               (m) PROJETO
+--        ON f.id_funcionario = fp.id_funcionario                  On fp.id_projeto = fp.id_projeto 
 --
  
 SELECT *
-FROM FUNCIONARIO as f 
-JOIN FUNCIONARIO-PROJETO fp ON f.id_funcionario = fp.id_funcionario
+FROM (FUNCIONARIO as f 
+JOIN FUNCIONARIO-PROJETO fp ON f.id_funcionario = fp.id_funcionario)
 JOIN PROJETO p ON fp.id_projeto = fp.id_projeto 
 WHERE ...
