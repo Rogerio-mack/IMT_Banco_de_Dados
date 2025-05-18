@@ -171,8 +171,10 @@ composta com FK em FUNCIONARIO e é representada por um retângulo duplo) -->
 
 * [vendas](https://github.com/Rogerio-mack/IMT_Banco_de_Dados/blob/main/exercicios/vendas.sql)
 * [Schema](https://github.com/Rogerio-mack/IMT_Banco_de_Dados/blob/main/exercicios/vendas.png)
-* [Exemplos - GroupBy | Exists](https://github.com/Rogerio-mack/IMT_Banco_de_Dados/blob/main/exercicios/vendas_groupby_exists.sql)
+* [Exemplos - Group By | Exists](https://github.com/Rogerio-mack/IMT_Banco_de_Dados/blob/main/exercicios/vendas_groupby_exists.sql)
 
 * [Exercícios Group By + Joins](https://github.com/Rogerio-mack/IMT_Banco_de_Dados/blob/main/exercicios/sakila_group_by.sql) | [Solução](https://github.com/Rogerio-mack/IMT_Banco_de_Dados/blob/main/exercicios/sakila_group_by_solucao.sql)
 
 Quer testar seus conhecimentos de SQL, veja aqui [**57 beginning, intermediate, and advanced challenges in SQL**](https://github.com/Rogerio-mack/IMT_Banco_de_Dados/blob/main/exercicios/Sylvia%20Moestl%20Vasilik%20-%20SQL%20Practice%20Problems_%2057.pdf)
+
+O que é um **self join**? Poderia me dar um exemplo?
