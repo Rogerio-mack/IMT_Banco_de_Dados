@@ -155,15 +155,17 @@ composta com FK em FUNCIONARIO e é representada por um retângulo duplo) -->
 * [Schema](https://github.com/Rogerio-mack/IMT_Banco_de_Dados/blob/main/exercicios/join_departamentos_funcionarios.png)
 * [Exercícios JOINs 2](https://github.com/Rogerio-mack/IMT_Banco_de_Dados/blob/main/exercicios/join_departamentos_funcionarios_questoes.sql) | [Solução](https://github.com/Rogerio-mack/IMT_Banco_de_Dados/blob/main/exercicios/join_departamentos_funcionarios_solucao.sql)
 
-## Lab11 **JOINS N-M e GroupBy**
+## Lab11 **JOINS N-M**
 
 ### alunos_matriculas_cursos
 
-* [Exemplos Joins 1-n e n-m](https://github.com/Rogerio-mack/IMT_Banco_de_Dados/blob/main/exemplo_joins_2x3.sql)
+[Exemplos Joins 1-n e n-m](https://github.com/Rogerio-mack/IMT_Banco_de_Dados/blob/main/exemplo_joins_2x3.sql)
 
 * [alunos_matriculas_cursos load](https://github.com/Rogerio-mack/IMT_Banco_de_Dados/blob/main/exercicios/join_alunos_matriculas_cursos.sql)
 * [Schema](https://github.com/Rogerio-mack/IMT_Banco_de_Dados/blob/main/exercicios/join_alunos_matriculas_cursos.png)
 * [Exercícios JOINs 3](https://github.com/Rogerio-mack/IMT_Banco_de_Dados/blob/main/exercicios/join_alunos_matriculas_cursos_questoes.sql) | [Solução](https://github.com/Rogerio-mack/IMT_Banco_de_Dados/blob/main/exercicios/join_alunos_matriculas_cursos_solucao.sql)
+
+## Lab12 **Group by, Having e JOINS múltiplas tabelas**
 
 ### vendas
 
@@ -171,3 +173,6 @@ composta com FK em FUNCIONARIO e é representada por um retângulo duplo) -->
 * [Schema](https://github.com/Rogerio-mack/IMT_Banco_de_Dados/blob/main/exercicios/vendas.png)
 * [Exemplos - GroupBy | Exists](https://github.com/Rogerio-mack/IMT_Banco_de_Dados/blob/main/exercicios/vendas_groupby_exists.sql)
 
+* [Exercícios Group By + Joins](https://github.com/Rogerio-mack/IMT_Banco_de_Dados/blob/main/exercicios/sakila_group_by.sql) | [Solução](https://github.com/Rogerio-mack/IMT_Banco_de_Dados/blob/main/exercicios/sakila_group_by_solucao.sql)
+
+Quer testar seus conhecimentos de SQL, veja aqui [**57 beginning, intermediate, and advanced challenges in SQL**](https://github.com/Rogerio-mack/IMT_Banco_de_Dados/blob/main/exercicios/Sylvia%20Moestl%20Vasilik%20-%20SQL%20Practice%20Problems_%2057.pdf)
