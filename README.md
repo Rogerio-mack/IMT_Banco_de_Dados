@@ -177,4 +177,4 @@ composta com FK em FUNCIONARIO e é representada por um retângulo duplo) -->
 
 Quer testar seus conhecimentos de SQL, veja aqui [**57 beginning, intermediate, and advanced challenges in SQL**](https://github.com/Rogerio-mack/IMT_Banco_de_Dados/blob/main/exercicios/Sylvia%20Moestl%20Vasilik%20-%20SQL%20Practice%20Problems_%2057.pdf)
 
-O que é um **self join**? Poderia me dar um exemplo?
+O que é um **self join**? Poderia me dar um exemplo? [Aqui.](https://github.com/Rogerio-mack/IMT_Banco_de_Dados/blob/main/exercicios/selfjoin_funcionarios.sql)
