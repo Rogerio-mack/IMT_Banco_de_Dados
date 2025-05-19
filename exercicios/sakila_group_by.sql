@@ -67,15 +67,5 @@
 -- Mostre o ID do funcionário, seu nome, e o total arrecadado. Ordene do funcionário que mais arrecadou para o que menos arrecadou.
 --
 
-SELECT 
-    p.staff_id,
-    s.first_name,
-    s.last_name,
-    SUM(p.amount) AS total_arrecadado
-FROM payment p
-JOIN staff s USING (staff_id)
-GROUP BY 
-    p.staff_id -- , s.first_name, s.last_name
-ORDER BY 
-    total_arrecadado DESC;
+
 
