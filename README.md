@@ -185,7 +185,7 @@ O que é um **self join**? Poderia me dar um exemplo? [Aqui.](https://github.com
 * [SQLite exercicio](https://colab.research.google.com/github/Rogerio-mack/IMT_Banco_de_Dados/blob/main/SQL_SQLite_exercicio.ipynb)
  
 * [empresa_exemplo](https://github.com/Rogerio-mack/IMT_Banco_de_Dados/blob/main/exercicios/empresa_exemplo.sql)
-* [Exercício empresa_exemplo](https://github.com/Rogerio-mack/IMT_Banco_de_Dados/blob/main/exercicios/empresa_exemplo_exercicio.sql) | * [Solução](https://github.com/Rogerio-mack/IMT_Banco_de_Dados/blob/main/exercicios/empresa_exemplo_solucao.sql)
+* [Exercício empresa_exemplo](https://github.com/Rogerio-mack/IMT_Banco_de_Dados/blob/main/exercicios/empresa_exemplo_exercicio.sql) | [Solução](https://github.com/Rogerio-mack/IMT_Banco_de_Dados/blob/main/exercicios/empresa_exemplo_solucao.sql)
 
   
 
