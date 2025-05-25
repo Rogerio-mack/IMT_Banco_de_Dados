@@ -178,3 +178,19 @@ composta com FK em FUNCIONARIO e é representada por um retângulo duplo) -->
 Quer testar seus conhecimentos de SQL, veja aqui [**57 beginning, intermediate, and advanced challenges in SQL**](https://github.com/Rogerio-mack/IMT_Banco_de_Dados/blob/main/exercicios/Sylvia%20Moestl%20Vasilik%20-%20SQL%20Practice%20Problems_%2057.pdf)
 
 O que é um **self join**? Poderia me dar um exemplo? [Aqui.](https://github.com/Rogerio-mack/IMT_Banco_de_Dados/blob/main/exercicios/selfjoin_funcionarios.sql)
+
+## Lab13 **SQL Python, Self Joins**
+
+* [SQLite exemplos: cursores](https://colab.research.google.com/github/Rogerio-mack/IMT_Banco_de_Dados/blob/main/SQL_SQLite_Python.ipynb)
+* [SQLite exercicio](https://colab.research.google.com/github/Rogerio-mack/IMT_Banco_de_Dados/blob/main/SQL_SQLite_exercicio.ipynb)
+ 
+* [empresa_exemplo](https://github.com/Rogerio-mack/IMT_Banco_de_Dados/blob/main/exercicios/empresa_exemplo.sql)
+* [Exercício empresa_exemplo](https://github.com/Rogerio-mack/IMT_Banco_de_Dados/blob/main/exercicios/empresa_exemplo_exercicio.sql) | * [Solução](https://github.com/Rogerio-mack/IMT_Banco_de_Dados/blob/main/exercicios/empresa_exemplo_solucao.sql)
+
+  
+
+
+
+
+
+
