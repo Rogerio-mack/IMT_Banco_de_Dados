@@ -191,7 +191,14 @@ O que é um **self join**? Poderia me dar um exemplo? [Aqui.](https://github.com
 
 * [SQL Syntax](https://github.com/Rogerio-mack/IMT_Banco_de_Dados/blob/main/SQL_syntaxe.sql)*, não deixe de ter essa sintaxe em mente para a prova*.
 
-  
+## Exercícios para Revisão
+
+* [Northwind database](https://github.com/Rogerio-mack/IMT_Banco_de_Dados/blob/main/northwind/Northwind.sql)
+* [Exercícios Resolvidos: Queries Básico](https://github.com/Rogerio-mack/IMT_Banco_de_Dados/blob/main/northwind/northwind_ex1_solucao.sql)
+* [Exercícios Resolvidos: Queries Intermediário](https://github.com/Rogerio-mack/IMT_Banco_de_Dados/blob/main/northwind/northwind_ex2_solucao.sql)
+* [Exercícios Resolvidos: Queries "Avançado"](https://github.com/Rogerio-mack/IMT_Banco_de_Dados/blob/main/northwind/northwind_ex3_solucao.sql)
+* [Group By exemplos](https://github.com/Rogerio-mack/IMT_Banco_de_Dados/blob/main/northwind/northwind_exemplos_group_by.sql)
+* [Sub Select exemplos](https://github.com/Rogerio-mack/IMT_Banco_de_Dados/blob/main/northwind/northwind_exemplos_sub_selects.sql)
 
 
 
