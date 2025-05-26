@@ -187,6 +187,10 @@ O que é um **self join**? Poderia me dar um exemplo? [Aqui.](https://github.com
 * [empresa_exemplo](https://github.com/Rogerio-mack/IMT_Banco_de_Dados/blob/main/exercicios/empresa_exemplo.sql)
 * [Exercício empresa_exemplo](https://github.com/Rogerio-mack/IMT_Banco_de_Dados/blob/main/exercicios/empresa_exemplo_exercicio.sql) | [Solução](https://github.com/Rogerio-mack/IMT_Banco_de_Dados/blob/main/exercicios/empresa_exemplo_solucao.sql)
 
+## Lab13 **Comentários Finais**
+
+* [SQL Syntax](https://github.com/Rogerio-mack/IMT_Banco_de_Dados/blob/main/SQL_syntaxe.sql)*, não deixe de ter essa sintaxe em mente para a prova*.
+
   
 
 
