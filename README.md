@@ -202,7 +202,7 @@ O que é um **self join**? Poderia me dar um exemplo? [Aqui.](https://github.com
 
 <br>
 
-* Verifique aqui as notas das atividades do [**1o bimestre**](https://github.com/Rogerio-mack/IMT_Banco_de_Dados/blob/main/Notas_LabDB_1Bi_ROGERIO_ajustadas.xlsx) (e os feedbacks) que foram encaminhadas para o prof. Mazzei. Aguarde até o prof. Mazzei fazer no lançamento da correção no sistema. 
+* Verifique aqui as notas das atividades do [**1o bimestre**](https://github.com/Rogerio-mack/IMT_Banco_de_Dados/blob/main/Notas_LabDB_1Bi_ROGERIO_ajustadas.xlsx) (e os feedbacks) que foram encaminhadas para o prof. Mazzei. Aguarde até o prof. Mazzei fazer no lançamento da correção no sistema. Estarei na Mauá, 02.06, pela manhã para atender eventuais dúvidas de conteúdo ou de notas. 
 
 
 
