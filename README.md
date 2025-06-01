@@ -200,6 +200,9 @@ O que é um **self join**? Poderia me dar um exemplo? [Aqui.](https://github.com
 * [Group By exemplos](https://github.com/Rogerio-mack/IMT_Banco_de_Dados/blob/main/northwind/northwind_exemplos_group_by.sql)
 * [Sub Select exemplos](https://github.com/Rogerio-mack/IMT_Banco_de_Dados/blob/main/northwind/northwind_exemplos_sub_selects.sql)
 
+<br>
+
+* Verifique aqui as notas das atividades do [**1o bimestre**](https://github.com/Rogerio-mack/IMT_Banco_de_Dados/blob/main/Notas_LabDB_1Bi_ROGERIO_ajustadas.xlsx) (e os feedbacks) que foram encaminhadas para o prof. Mazzei. Aguarde até o prof. Mazzei fazer no lançamento da correção no sistema. 
 
 
 
