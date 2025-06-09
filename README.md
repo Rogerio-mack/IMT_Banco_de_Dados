@@ -204,6 +204,21 @@ O que é um **self join**? Poderia me dar um exemplo? [Aqui.](https://github.com
 
 * Verifique aqui as notas das atividades do [**1o bimestre**](https://github.com/Rogerio-mack/IMT_Banco_de_Dados/blob/main/Notas_LabDB_1Bi_ROGERIO_ajustadas.xlsx) (e os feedbacks) que foram encaminhadas para o prof. Mazzei. Aguarde até o prof. Mazzei fazer no lançamento da correção no sistema. Estarei na Mauá, 02.06, pela manhã para atender eventuais dúvidas de conteúdo ou de notas. 
 
+## Notas Finais
+
+* [Consulte as notas de Laboratório do 2o Bimestre](https://github.com/Rogerio-mack/IMT_Banco_de_Dados/blob/main/Notas_LabDB_2B_ROGERIO.pdf)
+
+> Foram 6 atividades para entrega
+
+> - Lab10 Departamentos-Funcionários 
+> - Lab11 Alunos-Matriculas-Cursos
+> - Lab12 Sakila Group By e Joins (Parte I)
+> - Lab12 Sakila Group By e Joins (Parte II) 
+> - Lab13 Python & SQLite 
+> - Lab13 Joins, Self Joins e Exists Empresa Exemplo
+
+> Para a média foram empregadas as 5 maiores notas (isto é, até 1(uma) tarefa pôde não ser entregue sem prejuízo qualquer impacto na nota).
+
 
 
 
